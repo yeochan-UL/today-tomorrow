@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import logo from './assets/logo.png'; // 로고 경로에 맞게 수정해주세요
+import logo from './assets/logo.png';
 
 const TopWrapper = styled.div`
   width: 100%;

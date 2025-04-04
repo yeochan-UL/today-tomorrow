@@ -1,0 +1,802 @@
+[
+    {
+        "id": 1,
+        "title": "문제 1. 숫자 1까지 합 구하기",
+        "description": "정수 n이 주어질 때 1부터 n까지의 합을 반환하는 함수를 작성하세요.\n예: 1 → 1",
+        "initialCode": "function sumTo(n) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(sumTo(1));",
+        "solution": "function sumTo(n) {\n  return (n * (n + 1)) / 2;\n}",
+        "explanation": "1부터 n까지의 합은 등차수열 공식인 n*(n+1)/2로 계산할 수 있습니다."
+    },
+    {
+        "id": 2,
+        "title": "문제 2. 숫자 2까지 합 구하기",
+        "description": "정수 n이 주어질 때 1부터 n까지의 합을 반환하는 함수를 작성하세요.\n예: 2 → 3",
+        "initialCode": "function sumTo(n) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(sumTo(2));",
+        "solution": "function sumTo(n) {\n  return (n * (n + 1)) / 2;\n}",
+        "explanation": "1부터 n까지의 합은 등차수열 공식인 n*(n+1)/2로 계산할 수 있습니다."
+    },
+    {
+        "id": 3,
+        "title": "문제 3. 숫자 3까지 합 구하기",
+        "description": "정수 n이 주어질 때 1부터 n까지의 합을 반환하는 함수를 작성하세요.\n예: 3 → 6",
+        "initialCode": "function sumTo(n) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(sumTo(3));",
+        "solution": "function sumTo(n) {\n  return (n * (n + 1)) / 2;\n}",
+        "explanation": "1부터 n까지의 합은 등차수열 공식인 n*(n+1)/2로 계산할 수 있습니다."
+    },
+    {
+        "id": 4,
+        "title": "문제 4. 숫자 4까지 합 구하기",
+        "description": "정수 n이 주어질 때 1부터 n까지의 합을 반환하는 함수를 작성하세요.\n예: 4 → 10",
+        "initialCode": "function sumTo(n) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(sumTo(4));",
+        "solution": "function sumTo(n) {\n  return (n * (n + 1)) / 2;\n}",
+        "explanation": "1부터 n까지의 합은 등차수열 공식인 n*(n+1)/2로 계산할 수 있습니다."
+    },
+    {
+        "id": 5,
+        "title": "문제 5. 숫자 5까지 합 구하기",
+        "description": "정수 n이 주어질 때 1부터 n까지의 합을 반환하는 함수를 작성하세요.\n예: 5 → 15",
+        "initialCode": "function sumTo(n) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(sumTo(5));",
+        "solution": "function sumTo(n) {\n  return (n * (n + 1)) / 2;\n}",
+        "explanation": "1부터 n까지의 합은 등차수열 공식인 n*(n+1)/2로 계산할 수 있습니다."
+    },
+    {
+        "id": 6,
+        "title": "문제 6. 숫자 6까지 합 구하기",
+        "description": "정수 n이 주어질 때 1부터 n까지의 합을 반환하는 함수를 작성하세요.\n예: 6 → 21",
+        "initialCode": "function sumTo(n) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(sumTo(6));",
+        "solution": "function sumTo(n) {\n  return (n * (n + 1)) / 2;\n}",
+        "explanation": "1부터 n까지의 합은 등차수열 공식인 n*(n+1)/2로 계산할 수 있습니다."
+    },
+    {
+        "id": 7,
+        "title": "문제 7. 숫자 7까지 합 구하기",
+        "description": "정수 n이 주어질 때 1부터 n까지의 합을 반환하는 함수를 작성하세요.\n예: 7 → 28",
+        "initialCode": "function sumTo(n) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(sumTo(7));",
+        "solution": "function sumTo(n) {\n  return (n * (n + 1)) / 2;\n}",
+        "explanation": "1부터 n까지의 합은 등차수열 공식인 n*(n+1)/2로 계산할 수 있습니다."
+    },
+    {
+        "id": 8,
+        "title": "문제 8. 숫자 8까지 합 구하기",
+        "description": "정수 n이 주어질 때 1부터 n까지의 합을 반환하는 함수를 작성하세요.\n예: 8 → 36",
+        "initialCode": "function sumTo(n) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(sumTo(8));",
+        "solution": "function sumTo(n) {\n  return (n * (n + 1)) / 2;\n}",
+        "explanation": "1부터 n까지의 합은 등차수열 공식인 n*(n+1)/2로 계산할 수 있습니다."
+    },
+    {
+        "id": 9,
+        "title": "문제 9. 숫자 9까지 합 구하기",
+        "description": "정수 n이 주어질 때 1부터 n까지의 합을 반환하는 함수를 작성하세요.\n예: 9 → 45",
+        "initialCode": "function sumTo(n) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(sumTo(9));",
+        "solution": "function sumTo(n) {\n  return (n * (n + 1)) / 2;\n}",
+        "explanation": "1부터 n까지의 합은 등차수열 공식인 n*(n+1)/2로 계산할 수 있습니다."
+    },
+    {
+        "id": 10,
+        "title": "문제 10. 숫자 10까지 합 구하기",
+        "description": "정수 n이 주어질 때 1부터 n까지의 합을 반환하는 함수를 작성하세요.\n예: 10 → 55",
+        "initialCode": "function sumTo(n) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(sumTo(10));",
+        "solution": "function sumTo(n) {\n  return (n * (n + 1)) / 2;\n}",
+        "explanation": "1부터 n까지의 합은 등차수열 공식인 n*(n+1)/2로 계산할 수 있습니다."
+    },
+    {
+        "id": 11,
+        "title": "문제 11. 숫자 11까지 합 구하기",
+        "description": "정수 n이 주어질 때 1부터 n까지의 합을 반환하는 함수를 작성하세요.\n예: 11 → 66",
+        "initialCode": "function sumTo(n) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(sumTo(11));",
+        "solution": "function sumTo(n) {\n  return (n * (n + 1)) / 2;\n}",
+        "explanation": "1부터 n까지의 합은 등차수열 공식인 n*(n+1)/2로 계산할 수 있습니다."
+    },
+    {
+        "id": 12,
+        "title": "문제 12. 숫자 12까지 합 구하기",
+        "description": "정수 n이 주어질 때 1부터 n까지의 합을 반환하는 함수를 작성하세요.\n예: 12 → 78",
+        "initialCode": "function sumTo(n) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(sumTo(12));",
+        "solution": "function sumTo(n) {\n  return (n * (n + 1)) / 2;\n}",
+        "explanation": "1부터 n까지의 합은 등차수열 공식인 n*(n+1)/2로 계산할 수 있습니다."
+    },
+    {
+        "id": 13,
+        "title": "문제 13. 숫자 13까지 합 구하기",
+        "description": "정수 n이 주어질 때 1부터 n까지의 합을 반환하는 함수를 작성하세요.\n예: 13 → 91",
+        "initialCode": "function sumTo(n) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(sumTo(13));",
+        "solution": "function sumTo(n) {\n  return (n * (n + 1)) / 2;\n}",
+        "explanation": "1부터 n까지의 합은 등차수열 공식인 n*(n+1)/2로 계산할 수 있습니다."
+    },
+    {
+        "id": 14,
+        "title": "문제 14. 숫자 14까지 합 구하기",
+        "description": "정수 n이 주어질 때 1부터 n까지의 합을 반환하는 함수를 작성하세요.\n예: 14 → 105",
+        "initialCode": "function sumTo(n) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(sumTo(14));",
+        "solution": "function sumTo(n) {\n  return (n * (n + 1)) / 2;\n}",
+        "explanation": "1부터 n까지의 합은 등차수열 공식인 n*(n+1)/2로 계산할 수 있습니다."
+    },
+    {
+        "id": 15,
+        "title": "문제 15. 숫자 15까지 합 구하기",
+        "description": "정수 n이 주어질 때 1부터 n까지의 합을 반환하는 함수를 작성하세요.\n예: 15 → 120",
+        "initialCode": "function sumTo(n) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(sumTo(15));",
+        "solution": "function sumTo(n) {\n  return (n * (n + 1)) / 2;\n}",
+        "explanation": "1부터 n까지의 합은 등차수열 공식인 n*(n+1)/2로 계산할 수 있습니다."
+    },
+    {
+        "id": 16,
+        "title": "문제 16. 숫자 16까지 합 구하기",
+        "description": "정수 n이 주어질 때 1부터 n까지의 합을 반환하는 함수를 작성하세요.\n예: 16 → 136",
+        "initialCode": "function sumTo(n) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(sumTo(16));",
+        "solution": "function sumTo(n) {\n  return (n * (n + 1)) / 2;\n}",
+        "explanation": "1부터 n까지의 합은 등차수열 공식인 n*(n+1)/2로 계산할 수 있습니다."
+    },
+    {
+        "id": 17,
+        "title": "문제 17. 숫자 17까지 합 구하기",
+        "description": "정수 n이 주어질 때 1부터 n까지의 합을 반환하는 함수를 작성하세요.\n예: 17 → 153",
+        "initialCode": "function sumTo(n) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(sumTo(17));",
+        "solution": "function sumTo(n) {\n  return (n * (n + 1)) / 2;\n}",
+        "explanation": "1부터 n까지의 합은 등차수열 공식인 n*(n+1)/2로 계산할 수 있습니다."
+    },
+    {
+        "id": 18,
+        "title": "문제 18. 숫자 18까지 합 구하기",
+        "description": "정수 n이 주어질 때 1부터 n까지의 합을 반환하는 함수를 작성하세요.\n예: 18 → 171",
+        "initialCode": "function sumTo(n) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(sumTo(18));",
+        "solution": "function sumTo(n) {\n  return (n * (n + 1)) / 2;\n}",
+        "explanation": "1부터 n까지의 합은 등차수열 공식인 n*(n+1)/2로 계산할 수 있습니다."
+    },
+    {
+        "id": 19,
+        "title": "문제 19. 숫자 19까지 합 구하기",
+        "description": "정수 n이 주어질 때 1부터 n까지의 합을 반환하는 함수를 작성하세요.\n예: 19 → 190",
+        "initialCode": "function sumTo(n) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(sumTo(19));",
+        "solution": "function sumTo(n) {\n  return (n * (n + 1)) / 2;\n}",
+        "explanation": "1부터 n까지의 합은 등차수열 공식인 n*(n+1)/2로 계산할 수 있습니다."
+    },
+    {
+        "id": 20,
+        "title": "문제 20. 숫자 20까지 합 구하기",
+        "description": "정수 n이 주어질 때 1부터 n까지의 합을 반환하는 함수를 작성하세요.\n예: 20 → 210",
+        "initialCode": "function sumTo(n) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(sumTo(20));",
+        "solution": "function sumTo(n) {\n  return (n * (n + 1)) / 2;\n}",
+        "explanation": "1부터 n까지의 합은 등차수열 공식인 n*(n+1)/2로 계산할 수 있습니다."
+    },
+    {
+        "id": 21,
+        "title": "문제 21. 숫자 21까지 합 구하기",
+        "description": "정수 n이 주어질 때 1부터 n까지의 합을 반환하는 함수를 작성하세요.\n예: 21 → 231",
+        "initialCode": "function sumTo(n) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(sumTo(21));",
+        "solution": "function sumTo(n) {\n  return (n * (n + 1)) / 2;\n}",
+        "explanation": "1부터 n까지의 합은 등차수열 공식인 n*(n+1)/2로 계산할 수 있습니다."
+    },
+    {
+        "id": 22,
+        "title": "문제 22. 숫자 22까지 합 구하기",
+        "description": "정수 n이 주어질 때 1부터 n까지의 합을 반환하는 함수를 작성하세요.\n예: 22 → 253",
+        "initialCode": "function sumTo(n) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(sumTo(22));",
+        "solution": "function sumTo(n) {\n  return (n * (n + 1)) / 2;\n}",
+        "explanation": "1부터 n까지의 합은 등차수열 공식인 n*(n+1)/2로 계산할 수 있습니다."
+    },
+    {
+        "id": 23,
+        "title": "문제 23. 숫자 23까지 합 구하기",
+        "description": "정수 n이 주어질 때 1부터 n까지의 합을 반환하는 함수를 작성하세요.\n예: 23 → 276",
+        "initialCode": "function sumTo(n) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(sumTo(23));",
+        "solution": "function sumTo(n) {\n  return (n * (n + 1)) / 2;\n}",
+        "explanation": "1부터 n까지의 합은 등차수열 공식인 n*(n+1)/2로 계산할 수 있습니다."
+    },
+    {
+        "id": 24,
+        "title": "문제 24. 숫자 24까지 합 구하기",
+        "description": "정수 n이 주어질 때 1부터 n까지의 합을 반환하는 함수를 작성하세요.\n예: 24 → 300",
+        "initialCode": "function sumTo(n) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(sumTo(24));",
+        "solution": "function sumTo(n) {\n  return (n * (n + 1)) / 2;\n}",
+        "explanation": "1부터 n까지의 합은 등차수열 공식인 n*(n+1)/2로 계산할 수 있습니다."
+    },
+    {
+        "id": 25,
+        "title": "문제 25. 숫자 25까지 합 구하기",
+        "description": "정수 n이 주어질 때 1부터 n까지의 합을 반환하는 함수를 작성하세요.\n예: 25 → 325",
+        "initialCode": "function sumTo(n) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(sumTo(25));",
+        "solution": "function sumTo(n) {\n  return (n * (n + 1)) / 2;\n}",
+        "explanation": "1부터 n까지의 합은 등차수열 공식인 n*(n+1)/2로 계산할 수 있습니다."
+    },
+    {
+        "id": 26,
+        "title": "문제 26. 숫자 26까지 합 구하기",
+        "description": "정수 n이 주어질 때 1부터 n까지의 합을 반환하는 함수를 작성하세요.\n예: 26 → 351",
+        "initialCode": "function sumTo(n) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(sumTo(26));",
+        "solution": "function sumTo(n) {\n  return (n * (n + 1)) / 2;\n}",
+        "explanation": "1부터 n까지의 합은 등차수열 공식인 n*(n+1)/2로 계산할 수 있습니다."
+    },
+    {
+        "id": 27,
+        "title": "문제 27. 숫자 27까지 합 구하기",
+        "description": "정수 n이 주어질 때 1부터 n까지의 합을 반환하는 함수를 작성하세요.\n예: 27 → 378",
+        "initialCode": "function sumTo(n) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(sumTo(27));",
+        "solution": "function sumTo(n) {\n  return (n * (n + 1)) / 2;\n}",
+        "explanation": "1부터 n까지의 합은 등차수열 공식인 n*(n+1)/2로 계산할 수 있습니다."
+    },
+    {
+        "id": 28,
+        "title": "문제 28. 숫자 28까지 합 구하기",
+        "description": "정수 n이 주어질 때 1부터 n까지의 합을 반환하는 함수를 작성하세요.\n예: 28 → 406",
+        "initialCode": "function sumTo(n) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(sumTo(28));",
+        "solution": "function sumTo(n) {\n  return (n * (n + 1)) / 2;\n}",
+        "explanation": "1부터 n까지의 합은 등차수열 공식인 n*(n+1)/2로 계산할 수 있습니다."
+    },
+    {
+        "id": 29,
+        "title": "문제 29. 숫자 29까지 합 구하기",
+        "description": "정수 n이 주어질 때 1부터 n까지의 합을 반환하는 함수를 작성하세요.\n예: 29 → 435",
+        "initialCode": "function sumTo(n) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(sumTo(29));",
+        "solution": "function sumTo(n) {\n  return (n * (n + 1)) / 2;\n}",
+        "explanation": "1부터 n까지의 합은 등차수열 공식인 n*(n+1)/2로 계산할 수 있습니다."
+    },
+    {
+        "id": 30,
+        "title": "문제 30. 숫자 30까지 합 구하기",
+        "description": "정수 n이 주어질 때 1부터 n까지의 합을 반환하는 함수를 작성하세요.\n예: 30 → 465",
+        "initialCode": "function sumTo(n) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(sumTo(30));",
+        "solution": "function sumTo(n) {\n  return (n * (n + 1)) / 2;\n}",
+        "explanation": "1부터 n까지의 합은 등차수열 공식인 n*(n+1)/2로 계산할 수 있습니다."
+    },
+    {
+        "id": 31,
+        "title": "문제 31. 숫자 31까지 합 구하기",
+        "description": "정수 n이 주어질 때 1부터 n까지의 합을 반환하는 함수를 작성하세요.\n예: 31 → 496",
+        "initialCode": "function sumTo(n) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(sumTo(31));",
+        "solution": "function sumTo(n) {\n  return (n * (n + 1)) / 2;\n}",
+        "explanation": "1부터 n까지의 합은 등차수열 공식인 n*(n+1)/2로 계산할 수 있습니다."
+    },
+    {
+        "id": 32,
+        "title": "문제 32. 숫자 32까지 합 구하기",
+        "description": "정수 n이 주어질 때 1부터 n까지의 합을 반환하는 함수를 작성하세요.\n예: 32 → 528",
+        "initialCode": "function sumTo(n) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(sumTo(32));",
+        "solution": "function sumTo(n) {\n  return (n * (n + 1)) / 2;\n}",
+        "explanation": "1부터 n까지의 합은 등차수열 공식인 n*(n+1)/2로 계산할 수 있습니다."
+    },
+    {
+        "id": 33,
+        "title": "문제 33. 숫자 33까지 합 구하기",
+        "description": "정수 n이 주어질 때 1부터 n까지의 합을 반환하는 함수를 작성하세요.\n예: 33 → 561",
+        "initialCode": "function sumTo(n) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(sumTo(33));",
+        "solution": "function sumTo(n) {\n  return (n * (n + 1)) / 2;\n}",
+        "explanation": "1부터 n까지의 합은 등차수열 공식인 n*(n+1)/2로 계산할 수 있습니다."
+    },
+    {
+        "id": 34,
+        "title": "문제 34. 숫자 34까지 합 구하기",
+        "description": "정수 n이 주어질 때 1부터 n까지의 합을 반환하는 함수를 작성하세요.\n예: 34 → 595",
+        "initialCode": "function sumTo(n) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(sumTo(34));",
+        "solution": "function sumTo(n) {\n  return (n * (n + 1)) / 2;\n}",
+        "explanation": "1부터 n까지의 합은 등차수열 공식인 n*(n+1)/2로 계산할 수 있습니다."
+    },
+    {
+        "id": 35,
+        "title": "문제 35. 숫자 35까지 합 구하기",
+        "description": "정수 n이 주어질 때 1부터 n까지의 합을 반환하는 함수를 작성하세요.\n예: 35 → 630",
+        "initialCode": "function sumTo(n) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(sumTo(35));",
+        "solution": "function sumTo(n) {\n  return (n * (n + 1)) / 2;\n}",
+        "explanation": "1부터 n까지의 합은 등차수열 공식인 n*(n+1)/2로 계산할 수 있습니다."
+    },
+    {
+        "id": 36,
+        "title": "문제 36. 숫자 36까지 합 구하기",
+        "description": "정수 n이 주어질 때 1부터 n까지의 합을 반환하는 함수를 작성하세요.\n예: 36 → 666",
+        "initialCode": "function sumTo(n) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(sumTo(36));",
+        "solution": "function sumTo(n) {\n  return (n * (n + 1)) / 2;\n}",
+        "explanation": "1부터 n까지의 합은 등차수열 공식인 n*(n+1)/2로 계산할 수 있습니다."
+    },
+    {
+        "id": 37,
+        "title": "문제 37. 숫자 37까지 합 구하기",
+        "description": "정수 n이 주어질 때 1부터 n까지의 합을 반환하는 함수를 작성하세요.\n예: 37 → 703",
+        "initialCode": "function sumTo(n) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(sumTo(37));",
+        "solution": "function sumTo(n) {\n  return (n * (n + 1)) / 2;\n}",
+        "explanation": "1부터 n까지의 합은 등차수열 공식인 n*(n+1)/2로 계산할 수 있습니다."
+    },
+    {
+        "id": 38,
+        "title": "문제 38. 숫자 38까지 합 구하기",
+        "description": "정수 n이 주어질 때 1부터 n까지의 합을 반환하는 함수를 작성하세요.\n예: 38 → 741",
+        "initialCode": "function sumTo(n) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(sumTo(38));",
+        "solution": "function sumTo(n) {\n  return (n * (n + 1)) / 2;\n}",
+        "explanation": "1부터 n까지의 합은 등차수열 공식인 n*(n+1)/2로 계산할 수 있습니다."
+    },
+    {
+        "id": 39,
+        "title": "문제 39. 숫자 39까지 합 구하기",
+        "description": "정수 n이 주어질 때 1부터 n까지의 합을 반환하는 함수를 작성하세요.\n예: 39 → 780",
+        "initialCode": "function sumTo(n) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(sumTo(39));",
+        "solution": "function sumTo(n) {\n  return (n * (n + 1)) / 2;\n}",
+        "explanation": "1부터 n까지의 합은 등차수열 공식인 n*(n+1)/2로 계산할 수 있습니다."
+    },
+    {
+        "id": 40,
+        "title": "문제 40. 숫자 40까지 합 구하기",
+        "description": "정수 n이 주어질 때 1부터 n까지의 합을 반환하는 함수를 작성하세요.\n예: 40 → 820",
+        "initialCode": "function sumTo(n) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(sumTo(40));",
+        "solution": "function sumTo(n) {\n  return (n * (n + 1)) / 2;\n}",
+        "explanation": "1부터 n까지의 합은 등차수열 공식인 n*(n+1)/2로 계산할 수 있습니다."
+    },
+    {
+        "id": 41,
+        "title": "문제 41. 숫자 41까지 합 구하기",
+        "description": "정수 n이 주어질 때 1부터 n까지의 합을 반환하는 함수를 작성하세요.\n예: 41 → 861",
+        "initialCode": "function sumTo(n) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(sumTo(41));",
+        "solution": "function sumTo(n) {\n  return (n * (n + 1)) / 2;\n}",
+        "explanation": "1부터 n까지의 합은 등차수열 공식인 n*(n+1)/2로 계산할 수 있습니다."
+    },
+    {
+        "id": 42,
+        "title": "문제 42. 숫자 42까지 합 구하기",
+        "description": "정수 n이 주어질 때 1부터 n까지의 합을 반환하는 함수를 작성하세요.\n예: 42 → 903",
+        "initialCode": "function sumTo(n) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(sumTo(42));",
+        "solution": "function sumTo(n) {\n  return (n * (n + 1)) / 2;\n}",
+        "explanation": "1부터 n까지의 합은 등차수열 공식인 n*(n+1)/2로 계산할 수 있습니다."
+    },
+    {
+        "id": 43,
+        "title": "문제 43. 숫자 43까지 합 구하기",
+        "description": "정수 n이 주어질 때 1부터 n까지의 합을 반환하는 함수를 작성하세요.\n예: 43 → 946",
+        "initialCode": "function sumTo(n) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(sumTo(43));",
+        "solution": "function sumTo(n) {\n  return (n * (n + 1)) / 2;\n}",
+        "explanation": "1부터 n까지의 합은 등차수열 공식인 n*(n+1)/2로 계산할 수 있습니다."
+    },
+    {
+        "id": 44,
+        "title": "문제 44. 숫자 44까지 합 구하기",
+        "description": "정수 n이 주어질 때 1부터 n까지의 합을 반환하는 함수를 작성하세요.\n예: 44 → 990",
+        "initialCode": "function sumTo(n) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(sumTo(44));",
+        "solution": "function sumTo(n) {\n  return (n * (n + 1)) / 2;\n}",
+        "explanation": "1부터 n까지의 합은 등차수열 공식인 n*(n+1)/2로 계산할 수 있습니다."
+    },
+    {
+        "id": 45,
+        "title": "문제 45. 숫자 45까지 합 구하기",
+        "description": "정수 n이 주어질 때 1부터 n까지의 합을 반환하는 함수를 작성하세요.\n예: 45 → 1035",
+        "initialCode": "function sumTo(n) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(sumTo(45));",
+        "solution": "function sumTo(n) {\n  return (n * (n + 1)) / 2;\n}",
+        "explanation": "1부터 n까지의 합은 등차수열 공식인 n*(n+1)/2로 계산할 수 있습니다."
+    },
+    {
+        "id": 46,
+        "title": "문제 46. 숫자 46까지 합 구하기",
+        "description": "정수 n이 주어질 때 1부터 n까지의 합을 반환하는 함수를 작성하세요.\n예: 46 → 1081",
+        "initialCode": "function sumTo(n) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(sumTo(46));",
+        "solution": "function sumTo(n) {\n  return (n * (n + 1)) / 2;\n}",
+        "explanation": "1부터 n까지의 합은 등차수열 공식인 n*(n+1)/2로 계산할 수 있습니다."
+    },
+    {
+        "id": 47,
+        "title": "문제 47. 숫자 47까지 합 구하기",
+        "description": "정수 n이 주어질 때 1부터 n까지의 합을 반환하는 함수를 작성하세요.\n예: 47 → 1128",
+        "initialCode": "function sumTo(n) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(sumTo(47));",
+        "solution": "function sumTo(n) {\n  return (n * (n + 1)) / 2;\n}",
+        "explanation": "1부터 n까지의 합은 등차수열 공식인 n*(n+1)/2로 계산할 수 있습니다."
+    },
+    {
+        "id": 48,
+        "title": "문제 48. 숫자 48까지 합 구하기",
+        "description": "정수 n이 주어질 때 1부터 n까지의 합을 반환하는 함수를 작성하세요.\n예: 48 → 1176",
+        "initialCode": "function sumTo(n) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(sumTo(48));",
+        "solution": "function sumTo(n) {\n  return (n * (n + 1)) / 2;\n}",
+        "explanation": "1부터 n까지의 합은 등차수열 공식인 n*(n+1)/2로 계산할 수 있습니다."
+    },
+    {
+        "id": 49,
+        "title": "문제 49. 숫자 49까지 합 구하기",
+        "description": "정수 n이 주어질 때 1부터 n까지의 합을 반환하는 함수를 작성하세요.\n예: 49 → 1225",
+        "initialCode": "function sumTo(n) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(sumTo(49));",
+        "solution": "function sumTo(n) {\n  return (n * (n + 1)) / 2;\n}",
+        "explanation": "1부터 n까지의 합은 등차수열 공식인 n*(n+1)/2로 계산할 수 있습니다."
+    },
+    {
+        "id": 50,
+        "title": "문제 50. 숫자 50까지 합 구하기",
+        "description": "정수 n이 주어질 때 1부터 n까지의 합을 반환하는 함수를 작성하세요.\n예: 50 → 1275",
+        "initialCode": "function sumTo(n) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(sumTo(50));",
+        "solution": "function sumTo(n) {\n  return (n * (n + 1)) / 2;\n}",
+        "explanation": "1부터 n까지의 합은 등차수열 공식인 n*(n+1)/2로 계산할 수 있습니다."
+    },
+    {
+        "id": 51,
+        "title": "문제 51. 숫자 51까지 합 구하기",
+        "description": "정수 n이 주어질 때 1부터 n까지의 합을 반환하는 함수를 작성하세요.\n예: 51 → 1326",
+        "initialCode": "function sumTo(n) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(sumTo(51));",
+        "solution": "function sumTo(n) {\n  return (n * (n + 1)) / 2;\n}",
+        "explanation": "1부터 n까지의 합은 등차수열 공식인 n*(n+1)/2로 계산할 수 있습니다."
+    },
+    {
+        "id": 52,
+        "title": "문제 52. 숫자 52까지 합 구하기",
+        "description": "정수 n이 주어질 때 1부터 n까지의 합을 반환하는 함수를 작성하세요.\n예: 52 → 1378",
+        "initialCode": "function sumTo(n) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(sumTo(52));",
+        "solution": "function sumTo(n) {\n  return (n * (n + 1)) / 2;\n}",
+        "explanation": "1부터 n까지의 합은 등차수열 공식인 n*(n+1)/2로 계산할 수 있습니다."
+    },
+    {
+        "id": 53,
+        "title": "문제 53. 숫자 53까지 합 구하기",
+        "description": "정수 n이 주어질 때 1부터 n까지의 합을 반환하는 함수를 작성하세요.\n예: 53 → 1431",
+        "initialCode": "function sumTo(n) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(sumTo(53));",
+        "solution": "function sumTo(n) {\n  return (n * (n + 1)) / 2;\n}",
+        "explanation": "1부터 n까지의 합은 등차수열 공식인 n*(n+1)/2로 계산할 수 있습니다."
+    },
+    {
+        "id": 54,
+        "title": "문제 54. 숫자 54까지 합 구하기",
+        "description": "정수 n이 주어질 때 1부터 n까지의 합을 반환하는 함수를 작성하세요.\n예: 54 → 1485",
+        "initialCode": "function sumTo(n) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(sumTo(54));",
+        "solution": "function sumTo(n) {\n  return (n * (n + 1)) / 2;\n}",
+        "explanation": "1부터 n까지의 합은 등차수열 공식인 n*(n+1)/2로 계산할 수 있습니다."
+    },
+    {
+        "id": 55,
+        "title": "문제 55. 숫자 55까지 합 구하기",
+        "description": "정수 n이 주어질 때 1부터 n까지의 합을 반환하는 함수를 작성하세요.\n예: 55 → 1540",
+        "initialCode": "function sumTo(n) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(sumTo(55));",
+        "solution": "function sumTo(n) {\n  return (n * (n + 1)) / 2;\n}",
+        "explanation": "1부터 n까지의 합은 등차수열 공식인 n*(n+1)/2로 계산할 수 있습니다."
+    },
+    {
+        "id": 56,
+        "title": "문제 56. 숫자 56까지 합 구하기",
+        "description": "정수 n이 주어질 때 1부터 n까지의 합을 반환하는 함수를 작성하세요.\n예: 56 → 1596",
+        "initialCode": "function sumTo(n) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(sumTo(56));",
+        "solution": "function sumTo(n) {\n  return (n * (n + 1)) / 2;\n}",
+        "explanation": "1부터 n까지의 합은 등차수열 공식인 n*(n+1)/2로 계산할 수 있습니다."
+    },
+    {
+        "id": 57,
+        "title": "문제 57. 숫자 57까지 합 구하기",
+        "description": "정수 n이 주어질 때 1부터 n까지의 합을 반환하는 함수를 작성하세요.\n예: 57 → 1653",
+        "initialCode": "function sumTo(n) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(sumTo(57));",
+        "solution": "function sumTo(n) {\n  return (n * (n + 1)) / 2;\n}",
+        "explanation": "1부터 n까지의 합은 등차수열 공식인 n*(n+1)/2로 계산할 수 있습니다."
+    },
+    {
+        "id": 58,
+        "title": "문제 58. 숫자 58까지 합 구하기",
+        "description": "정수 n이 주어질 때 1부터 n까지의 합을 반환하는 함수를 작성하세요.\n예: 58 → 1711",
+        "initialCode": "function sumTo(n) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(sumTo(58));",
+        "solution": "function sumTo(n) {\n  return (n * (n + 1)) / 2;\n}",
+        "explanation": "1부터 n까지의 합은 등차수열 공식인 n*(n+1)/2로 계산할 수 있습니다."
+    },
+    {
+        "id": 59,
+        "title": "문제 59. 숫자 59까지 합 구하기",
+        "description": "정수 n이 주어질 때 1부터 n까지의 합을 반환하는 함수를 작성하세요.\n예: 59 → 1770",
+        "initialCode": "function sumTo(n) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(sumTo(59));",
+        "solution": "function sumTo(n) {\n  return (n * (n + 1)) / 2;\n}",
+        "explanation": "1부터 n까지의 합은 등차수열 공식인 n*(n+1)/2로 계산할 수 있습니다."
+    },
+    {
+        "id": 60,
+        "title": "문제 60. 숫자 60까지 합 구하기",
+        "description": "정수 n이 주어질 때 1부터 n까지의 합을 반환하는 함수를 작성하세요.\n예: 60 → 1830",
+        "initialCode": "function sumTo(n) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(sumTo(60));",
+        "solution": "function sumTo(n) {\n  return (n * (n + 1)) / 2;\n}",
+        "explanation": "1부터 n까지의 합은 등차수열 공식인 n*(n+1)/2로 계산할 수 있습니다."
+    },
+    {
+        "id": 61,
+        "title": "문제 61. 숫자 61까지 합 구하기",
+        "description": "정수 n이 주어질 때 1부터 n까지의 합을 반환하는 함수를 작성하세요.\n예: 61 → 1891",
+        "initialCode": "function sumTo(n) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(sumTo(61));",
+        "solution": "function sumTo(n) {\n  return (n * (n + 1)) / 2;\n}",
+        "explanation": "1부터 n까지의 합은 등차수열 공식인 n*(n+1)/2로 계산할 수 있습니다."
+    },
+    {
+        "id": 62,
+        "title": "문제 62. 숫자 62까지 합 구하기",
+        "description": "정수 n이 주어질 때 1부터 n까지의 합을 반환하는 함수를 작성하세요.\n예: 62 → 1953",
+        "initialCode": "function sumTo(n) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(sumTo(62));",
+        "solution": "function sumTo(n) {\n  return (n * (n + 1)) / 2;\n}",
+        "explanation": "1부터 n까지의 합은 등차수열 공식인 n*(n+1)/2로 계산할 수 있습니다."
+    },
+    {
+        "id": 63,
+        "title": "문제 63. 숫자 63까지 합 구하기",
+        "description": "정수 n이 주어질 때 1부터 n까지의 합을 반환하는 함수를 작성하세요.\n예: 63 → 2016",
+        "initialCode": "function sumTo(n) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(sumTo(63));",
+        "solution": "function sumTo(n) {\n  return (n * (n + 1)) / 2;\n}",
+        "explanation": "1부터 n까지의 합은 등차수열 공식인 n*(n+1)/2로 계산할 수 있습니다."
+    },
+    {
+        "id": 64,
+        "title": "문제 64. 숫자 64까지 합 구하기",
+        "description": "정수 n이 주어질 때 1부터 n까지의 합을 반환하는 함수를 작성하세요.\n예: 64 → 2080",
+        "initialCode": "function sumTo(n) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(sumTo(64));",
+        "solution": "function sumTo(n) {\n  return (n * (n + 1)) / 2;\n}",
+        "explanation": "1부터 n까지의 합은 등차수열 공식인 n*(n+1)/2로 계산할 수 있습니다."
+    },
+    {
+        "id": 65,
+        "title": "문제 65. 숫자 65까지 합 구하기",
+        "description": "정수 n이 주어질 때 1부터 n까지의 합을 반환하는 함수를 작성하세요.\n예: 65 → 2145",
+        "initialCode": "function sumTo(n) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(sumTo(65));",
+        "solution": "function sumTo(n) {\n  return (n * (n + 1)) / 2;\n}",
+        "explanation": "1부터 n까지의 합은 등차수열 공식인 n*(n+1)/2로 계산할 수 있습니다."
+    },
+    {
+        "id": 66,
+        "title": "문제 66. 숫자 66까지 합 구하기",
+        "description": "정수 n이 주어질 때 1부터 n까지의 합을 반환하는 함수를 작성하세요.\n예: 66 → 2211",
+        "initialCode": "function sumTo(n) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(sumTo(66));",
+        "solution": "function sumTo(n) {\n  return (n * (n + 1)) / 2;\n}",
+        "explanation": "1부터 n까지의 합은 등차수열 공식인 n*(n+1)/2로 계산할 수 있습니다."
+    },
+    {
+        "id": 67,
+        "title": "문제 67. 숫자 67까지 합 구하기",
+        "description": "정수 n이 주어질 때 1부터 n까지의 합을 반환하는 함수를 작성하세요.\n예: 67 → 2278",
+        "initialCode": "function sumTo(n) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(sumTo(67));",
+        "solution": "function sumTo(n) {\n  return (n * (n + 1)) / 2;\n}",
+        "explanation": "1부터 n까지의 합은 등차수열 공식인 n*(n+1)/2로 계산할 수 있습니다."
+    },
+    {
+        "id": 68,
+        "title": "문제 68. 숫자 68까지 합 구하기",
+        "description": "정수 n이 주어질 때 1부터 n까지의 합을 반환하는 함수를 작성하세요.\n예: 68 → 2346",
+        "initialCode": "function sumTo(n) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(sumTo(68));",
+        "solution": "function sumTo(n) {\n  return (n * (n + 1)) / 2;\n}",
+        "explanation": "1부터 n까지의 합은 등차수열 공식인 n*(n+1)/2로 계산할 수 있습니다."
+    },
+    {
+        "id": 69,
+        "title": "문제 69. 숫자 69까지 합 구하기",
+        "description": "정수 n이 주어질 때 1부터 n까지의 합을 반환하는 함수를 작성하세요.\n예: 69 → 2415",
+        "initialCode": "function sumTo(n) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(sumTo(69));",
+        "solution": "function sumTo(n) {\n  return (n * (n + 1)) / 2;\n}",
+        "explanation": "1부터 n까지의 합은 등차수열 공식인 n*(n+1)/2로 계산할 수 있습니다."
+    },
+    {
+        "id": 70,
+        "title": "문제 70. 숫자 70까지 합 구하기",
+        "description": "정수 n이 주어질 때 1부터 n까지의 합을 반환하는 함수를 작성하세요.\n예: 70 → 2485",
+        "initialCode": "function sumTo(n) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(sumTo(70));",
+        "solution": "function sumTo(n) {\n  return (n * (n + 1)) / 2;\n}",
+        "explanation": "1부터 n까지의 합은 등차수열 공식인 n*(n+1)/2로 계산할 수 있습니다."
+    },
+    {
+        "id": 71,
+        "title": "문제 71. 숫자 71까지 합 구하기",
+        "description": "정수 n이 주어질 때 1부터 n까지의 합을 반환하는 함수를 작성하세요.\n예: 71 → 2556",
+        "initialCode": "function sumTo(n) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(sumTo(71));",
+        "solution": "function sumTo(n) {\n  return (n * (n + 1)) / 2;\n}",
+        "explanation": "1부터 n까지의 합은 등차수열 공식인 n*(n+1)/2로 계산할 수 있습니다."
+    },
+    {
+        "id": 72,
+        "title": "문제 72. 숫자 72까지 합 구하기",
+        "description": "정수 n이 주어질 때 1부터 n까지의 합을 반환하는 함수를 작성하세요.\n예: 72 → 2628",
+        "initialCode": "function sumTo(n) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(sumTo(72));",
+        "solution": "function sumTo(n) {\n  return (n * (n + 1)) / 2;\n}",
+        "explanation": "1부터 n까지의 합은 등차수열 공식인 n*(n+1)/2로 계산할 수 있습니다."
+    },
+    {
+        "id": 73,
+        "title": "문제 73. 숫자 73까지 합 구하기",
+        "description": "정수 n이 주어질 때 1부터 n까지의 합을 반환하는 함수를 작성하세요.\n예: 73 → 2701",
+        "initialCode": "function sumTo(n) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(sumTo(73));",
+        "solution": "function sumTo(n) {\n  return (n * (n + 1)) / 2;\n}",
+        "explanation": "1부터 n까지의 합은 등차수열 공식인 n*(n+1)/2로 계산할 수 있습니다."
+    },
+    {
+        "id": 74,
+        "title": "문제 74. 숫자 74까지 합 구하기",
+        "description": "정수 n이 주어질 때 1부터 n까지의 합을 반환하는 함수를 작성하세요.\n예: 74 → 2775",
+        "initialCode": "function sumTo(n) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(sumTo(74));",
+        "solution": "function sumTo(n) {\n  return (n * (n + 1)) / 2;\n}",
+        "explanation": "1부터 n까지의 합은 등차수열 공식인 n*(n+1)/2로 계산할 수 있습니다."
+    },
+    {
+        "id": 75,
+        "title": "문제 75. 숫자 75까지 합 구하기",
+        "description": "정수 n이 주어질 때 1부터 n까지의 합을 반환하는 함수를 작성하세요.\n예: 75 → 2850",
+        "initialCode": "function sumTo(n) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(sumTo(75));",
+        "solution": "function sumTo(n) {\n  return (n * (n + 1)) / 2;\n}",
+        "explanation": "1부터 n까지의 합은 등차수열 공식인 n*(n+1)/2로 계산할 수 있습니다."
+    },
+    {
+        "id": 76,
+        "title": "문제 76. 숫자 76까지 합 구하기",
+        "description": "정수 n이 주어질 때 1부터 n까지의 합을 반환하는 함수를 작성하세요.\n예: 76 → 2926",
+        "initialCode": "function sumTo(n) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(sumTo(76));",
+        "solution": "function sumTo(n) {\n  return (n * (n + 1)) / 2;\n}",
+        "explanation": "1부터 n까지의 합은 등차수열 공식인 n*(n+1)/2로 계산할 수 있습니다."
+    },
+    {
+        "id": 77,
+        "title": "문제 77. 숫자 77까지 합 구하기",
+        "description": "정수 n이 주어질 때 1부터 n까지의 합을 반환하는 함수를 작성하세요.\n예: 77 → 3003",
+        "initialCode": "function sumTo(n) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(sumTo(77));",
+        "solution": "function sumTo(n) {\n  return (n * (n + 1)) / 2;\n}",
+        "explanation": "1부터 n까지의 합은 등차수열 공식인 n*(n+1)/2로 계산할 수 있습니다."
+    },
+    {
+        "id": 78,
+        "title": "문제 78. 숫자 78까지 합 구하기",
+        "description": "정수 n이 주어질 때 1부터 n까지의 합을 반환하는 함수를 작성하세요.\n예: 78 → 3081",
+        "initialCode": "function sumTo(n) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(sumTo(78));",
+        "solution": "function sumTo(n) {\n  return (n * (n + 1)) / 2;\n}",
+        "explanation": "1부터 n까지의 합은 등차수열 공식인 n*(n+1)/2로 계산할 수 있습니다."
+    },
+    {
+        "id": 79,
+        "title": "문제 79. 숫자 79까지 합 구하기",
+        "description": "정수 n이 주어질 때 1부터 n까지의 합을 반환하는 함수를 작성하세요.\n예: 79 → 3160",
+        "initialCode": "function sumTo(n) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(sumTo(79));",
+        "solution": "function sumTo(n) {\n  return (n * (n + 1)) / 2;\n}",
+        "explanation": "1부터 n까지의 합은 등차수열 공식인 n*(n+1)/2로 계산할 수 있습니다."
+    },
+    {
+        "id": 80,
+        "title": "문제 80. 숫자 80까지 합 구하기",
+        "description": "정수 n이 주어질 때 1부터 n까지의 합을 반환하는 함수를 작성하세요.\n예: 80 → 3240",
+        "initialCode": "function sumTo(n) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(sumTo(80));",
+        "solution": "function sumTo(n) {\n  return (n * (n + 1)) / 2;\n}",
+        "explanation": "1부터 n까지의 합은 등차수열 공식인 n*(n+1)/2로 계산할 수 있습니다."
+    },
+    {
+        "id": 81,
+        "title": "문제 81. 숫자 81까지 합 구하기",
+        "description": "정수 n이 주어질 때 1부터 n까지의 합을 반환하는 함수를 작성하세요.\n예: 81 → 3321",
+        "initialCode": "function sumTo(n) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(sumTo(81));",
+        "solution": "function sumTo(n) {\n  return (n * (n + 1)) / 2;\n}",
+        "explanation": "1부터 n까지의 합은 등차수열 공식인 n*(n+1)/2로 계산할 수 있습니다."
+    },
+    {
+        "id": 82,
+        "title": "문제 82. 숫자 82까지 합 구하기",
+        "description": "정수 n이 주어질 때 1부터 n까지의 합을 반환하는 함수를 작성하세요.\n예: 82 → 3403",
+        "initialCode": "function sumTo(n) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(sumTo(82));",
+        "solution": "function sumTo(n) {\n  return (n * (n + 1)) / 2;\n}",
+        "explanation": "1부터 n까지의 합은 등차수열 공식인 n*(n+1)/2로 계산할 수 있습니다."
+    },
+    {
+        "id": 83,
+        "title": "문제 83. 숫자 83까지 합 구하기",
+        "description": "정수 n이 주어질 때 1부터 n까지의 합을 반환하는 함수를 작성하세요.\n예: 83 → 3486",
+        "initialCode": "function sumTo(n) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(sumTo(83));",
+        "solution": "function sumTo(n) {\n  return (n * (n + 1)) / 2;\n}",
+        "explanation": "1부터 n까지의 합은 등차수열 공식인 n*(n+1)/2로 계산할 수 있습니다."
+    },
+    {
+        "id": 84,
+        "title": "문제 84. 숫자 84까지 합 구하기",
+        "description": "정수 n이 주어질 때 1부터 n까지의 합을 반환하는 함수를 작성하세요.\n예: 84 → 3570",
+        "initialCode": "function sumTo(n) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(sumTo(84));",
+        "solution": "function sumTo(n) {\n  return (n * (n + 1)) / 2;\n}",
+        "explanation": "1부터 n까지의 합은 등차수열 공식인 n*(n+1)/2로 계산할 수 있습니다."
+    },
+    {
+        "id": 85,
+        "title": "문제 85. 숫자 85까지 합 구하기",
+        "description": "정수 n이 주어질 때 1부터 n까지의 합을 반환하는 함수를 작성하세요.\n예: 85 → 3655",
+        "initialCode": "function sumTo(n) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(sumTo(85));",
+        "solution": "function sumTo(n) {\n  return (n * (n + 1)) / 2;\n}",
+        "explanation": "1부터 n까지의 합은 등차수열 공식인 n*(n+1)/2로 계산할 수 있습니다."
+    },
+    {
+        "id": 86,
+        "title": "문제 86. 숫자 86까지 합 구하기",
+        "description": "정수 n이 주어질 때 1부터 n까지의 합을 반환하는 함수를 작성하세요.\n예: 86 → 3741",
+        "initialCode": "function sumTo(n) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(sumTo(86));",
+        "solution": "function sumTo(n) {\n  return (n * (n + 1)) / 2;\n}",
+        "explanation": "1부터 n까지의 합은 등차수열 공식인 n*(n+1)/2로 계산할 수 있습니다."
+    },
+    {
+        "id": 87,
+        "title": "문제 87. 숫자 87까지 합 구하기",
+        "description": "정수 n이 주어질 때 1부터 n까지의 합을 반환하는 함수를 작성하세요.\n예: 87 → 3828",
+        "initialCode": "function sumTo(n) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(sumTo(87));",
+        "solution": "function sumTo(n) {\n  return (n * (n + 1)) / 2;\n}",
+        "explanation": "1부터 n까지의 합은 등차수열 공식인 n*(n+1)/2로 계산할 수 있습니다."
+    },
+    {
+        "id": 88,
+        "title": "문제 88. 숫자 88까지 합 구하기",
+        "description": "정수 n이 주어질 때 1부터 n까지의 합을 반환하는 함수를 작성하세요.\n예: 88 → 3916",
+        "initialCode": "function sumTo(n) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(sumTo(88));",
+        "solution": "function sumTo(n) {\n  return (n * (n + 1)) / 2;\n}",
+        "explanation": "1부터 n까지의 합은 등차수열 공식인 n*(n+1)/2로 계산할 수 있습니다."
+    },
+    {
+        "id": 89,
+        "title": "문제 89. 숫자 89까지 합 구하기",
+        "description": "정수 n이 주어질 때 1부터 n까지의 합을 반환하는 함수를 작성하세요.\n예: 89 → 4005",
+        "initialCode": "function sumTo(n) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(sumTo(89));",
+        "solution": "function sumTo(n) {\n  return (n * (n + 1)) / 2;\n}",
+        "explanation": "1부터 n까지의 합은 등차수열 공식인 n*(n+1)/2로 계산할 수 있습니다."
+    },
+    {
+        "id": 90,
+        "title": "문제 90. 숫자 90까지 합 구하기",
+        "description": "정수 n이 주어질 때 1부터 n까지의 합을 반환하는 함수를 작성하세요.\n예: 90 → 4095",
+        "initialCode": "function sumTo(n) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(sumTo(90));",
+        "solution": "function sumTo(n) {\n  return (n * (n + 1)) / 2;\n}",
+        "explanation": "1부터 n까지의 합은 등차수열 공식인 n*(n+1)/2로 계산할 수 있습니다."
+    },
+    {
+        "id": 91,
+        "title": "문제 91. 숫자 91까지 합 구하기",
+        "description": "정수 n이 주어질 때 1부터 n까지의 합을 반환하는 함수를 작성하세요.\n예: 91 → 4186",
+        "initialCode": "function sumTo(n) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(sumTo(91));",
+        "solution": "function sumTo(n) {\n  return (n * (n + 1)) / 2;\n}",
+        "explanation": "1부터 n까지의 합은 등차수열 공식인 n*(n+1)/2로 계산할 수 있습니다."
+    },
+    {
+        "id": 92,
+        "title": "문제 92. 숫자 92까지 합 구하기",
+        "description": "정수 n이 주어질 때 1부터 n까지의 합을 반환하는 함수를 작성하세요.\n예: 92 → 4278",
+        "initialCode": "function sumTo(n) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(sumTo(92));",
+        "solution": "function sumTo(n) {\n  return (n * (n + 1)) / 2;\n}",
+        "explanation": "1부터 n까지의 합은 등차수열 공식인 n*(n+1)/2로 계산할 수 있습니다."
+    },
+    {
+        "id": 93,
+        "title": "문제 93. 숫자 93까지 합 구하기",
+        "description": "정수 n이 주어질 때 1부터 n까지의 합을 반환하는 함수를 작성하세요.\n예: 93 → 4371",
+        "initialCode": "function sumTo(n) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(sumTo(93));",
+        "solution": "function sumTo(n) {\n  return (n * (n + 1)) / 2;\n}",
+        "explanation": "1부터 n까지의 합은 등차수열 공식인 n*(n+1)/2로 계산할 수 있습니다."
+    },
+    {
+        "id": 94,
+        "title": "문제 94. 숫자 94까지 합 구하기",
+        "description": "정수 n이 주어질 때 1부터 n까지의 합을 반환하는 함수를 작성하세요.\n예: 94 → 4465",
+        "initialCode": "function sumTo(n) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(sumTo(94));",
+        "solution": "function sumTo(n) {\n  return (n * (n + 1)) / 2;\n}",
+        "explanation": "1부터 n까지의 합은 등차수열 공식인 n*(n+1)/2로 계산할 수 있습니다."
+    },
+    {
+        "id": 95,
+        "title": "문제 95. 숫자 95까지 합 구하기",
+        "description": "정수 n이 주어질 때 1부터 n까지의 합을 반환하는 함수를 작성하세요.\n예: 95 → 4560",
+        "initialCode": "function sumTo(n) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(sumTo(95));",
+        "solution": "function sumTo(n) {\n  return (n * (n + 1)) / 2;\n}",
+        "explanation": "1부터 n까지의 합은 등차수열 공식인 n*(n+1)/2로 계산할 수 있습니다."
+    },
+    {
+        "id": 96,
+        "title": "문제 96. 숫자 96까지 합 구하기",
+        "description": "정수 n이 주어질 때 1부터 n까지의 합을 반환하는 함수를 작성하세요.\n예: 96 → 4656",
+        "initialCode": "function sumTo(n) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(sumTo(96));",
+        "solution": "function sumTo(n) {\n  return (n * (n + 1)) / 2;\n}",
+        "explanation": "1부터 n까지의 합은 등차수열 공식인 n*(n+1)/2로 계산할 수 있습니다."
+    },
+    {
+        "id": 97,
+        "title": "문제 97. 숫자 97까지 합 구하기",
+        "description": "정수 n이 주어질 때 1부터 n까지의 합을 반환하는 함수를 작성하세요.\n예: 97 → 4753",
+        "initialCode": "function sumTo(n) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(sumTo(97));",
+        "solution": "function sumTo(n) {\n  return (n * (n + 1)) / 2;\n}",
+        "explanation": "1부터 n까지의 합은 등차수열 공식인 n*(n+1)/2로 계산할 수 있습니다."
+    },
+    {
+        "id": 98,
+        "title": "문제 98. 숫자 98까지 합 구하기",
+        "description": "정수 n이 주어질 때 1부터 n까지의 합을 반환하는 함수를 작성하세요.\n예: 98 → 4851",
+        "initialCode": "function sumTo(n) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(sumTo(98));",
+        "solution": "function sumTo(n) {\n  return (n * (n + 1)) / 2;\n}",
+        "explanation": "1부터 n까지의 합은 등차수열 공식인 n*(n+1)/2로 계산할 수 있습니다."
+    },
+    {
+        "id": 99,
+        "title": "문제 99. 숫자 99까지 합 구하기",
+        "description": "정수 n이 주어질 때 1부터 n까지의 합을 반환하는 함수를 작성하세요.\n예: 99 → 4950",
+        "initialCode": "function sumTo(n) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(sumTo(99));",
+        "solution": "function sumTo(n) {\n  return (n * (n + 1)) / 2;\n}",
+        "explanation": "1부터 n까지의 합은 등차수열 공식인 n*(n+1)/2로 계산할 수 있습니다."
+    },
+    {
+        "id": 100,
+        "title": "문제 100. 숫자 100까지 합 구하기",
+        "description": "정수 n이 주어질 때 1부터 n까지의 합을 반환하는 함수를 작성하세요.\n예: 100 → 5050",
+        "initialCode": "function sumTo(n) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(sumTo(100));",
+        "solution": "function sumTo(n) {\n  return (n * (n + 1)) / 2;\n}",
+        "explanation": "1부터 n까지의 합은 등차수열 공식인 n*(n+1)/2로 계산할 수 있습니다."
+    }
+]

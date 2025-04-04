@@ -1,12 +1,23 @@
-# React + Vite
+# 📬 오늘 내일 - JavaScript 문제 메일링 시스템
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**React 19 + Vite 기반으로 제작된 문제풀이 웹앱입니다.**  
+CSS는 `styled-components`로 스타일링했습니다.
 
-Currently, two official plugins are available:
+## 🛠️ 기술 스택
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React 19**
+- **Vite**
+- **styled-components**
 
-## Expanding the ESLint configuration
+## ⚙️ 설치 및 실행 방법
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+# 1. 저장소 클론
+git clone https://github.com/yeochan-UL/today-tomorrow.git
+cd today-tomorrow
+
+# 2. 의존성 설치
+npm install
+
+# 3. 개발 서버 실행
+npm run dev

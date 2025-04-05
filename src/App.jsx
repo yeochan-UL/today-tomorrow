@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import HomePage from './HomePage';       // 랜딩 페이지
-import ProblemPage from './ProblemPage'; // 문제 풀이 페이지
+import HomePage from '@/site/HomePage';       // 랜딩 페이지
+import ProblemPage from '@/ProblemPage'; // 문제 풀이 페이지
 
 export default function App() {
   return (

@@ -145,7 +145,7 @@ export default function SubscribeSection() {
     const handleSubscribe = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('http://175.45.194.231:3000/api/subscribe', { email });
+            const response = await axios.post('비밀이지롱!', { email });
             setMessage(response.data.message || '🎉 구독 완료!\n이제 매일 오전 9시에 문제를 보내드릴게요!');
             setShowMessage(true);
             setEmail('');

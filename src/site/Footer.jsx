@@ -5,6 +5,7 @@ const FooterWrapper = styled.div`
     width: 100%;
     max-width: 1000px;
     margin: 0 auto;
+    padding: 1rem;
 `;
 
 const FooterContainer = styled.footer`
@@ -14,6 +15,12 @@ const FooterContainer = styled.footer`
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
 `;
 
 const LeftSection = styled.div`
@@ -26,6 +33,11 @@ const RightSection = styled.div`
     flex-direction: column;
     align-items: flex-end;
     text-align: right;
+
+    @media (max-width: 768px) {
+        align-items: center;
+        text-align: center;
+    }
 `;
 
 const GitHubButton = styled.button`

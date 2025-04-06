@@ -83,7 +83,6 @@ const EmailInput = styled.input`
     }
 `;
 
-// SubscribeButton: hover 시 확대 및 그림자 효과
 const SubscribeButton = styled.button`
     padding: 0.8rem 1.5rem;
     font-size: 1rem;
@@ -92,11 +91,9 @@ const SubscribeButton = styled.button`
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
   
     &:hover {
-        transform: scale(1.05);
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        background-color: #60B5FF;
     }
 `;
 

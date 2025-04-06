@@ -1,19 +1,38 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { createGlobalStyle } from 'styled-components';
 import DevImageSrc from '../assets/dev_difficulties.png';
+
+const GlobalStyle = createGlobalStyle`
+    *, *::before, *::after {
+        box-sizing: border-box;
+    }
+  
+    body {
+        font-family: 'GmarketSansMedium', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #fff;
+    }
+`;
 
 const OuterSection = styled.section`
     width: 100%;
-    height: 754px;
+    min-height: 754px;
     background-color: #60B5FF;
     padding: 3rem 0;
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow-x: hidden;
+
+    @media (max-width: 768px) {
+        background-color: #60B5FF;
+        padding: 2rem 0;
+    }
 `;
 
 const Container = styled.div`
-    width: 100%;
+    width: 90%;
     max-width: 1000px;
     background: #e6f3ff;
     border-radius: 16px;
@@ -31,6 +50,14 @@ const Title = styled.h2`
     color: #333;
     text-align: center;
     margin: 0;
+
+    @media (max-width: 768px) {
+        font-size: 1.8rem;
+    }
+
+    @media (max-width: 480px) {
+        font-size: 1.6rem;
+    }
 `;
 
 const DevImage = styled.img`
@@ -38,6 +65,10 @@ const DevImage = styled.img`
     max-width: 500px;
     border-radius: 12px;
     object-fit: cover;
+
+    @media (max-width: 768px) {
+        max-width: 90%;
+    }
 `;
 
 const TopicsContainer = styled.div`
@@ -45,6 +76,10 @@ const TopicsContainer = styled.div`
     gap: 1.5rem;
     flex-wrap: wrap;
     justify-content: center;
+
+    @media (max-width: 480px) {
+        gap: 1rem;
+    }
 `;
 
 const Topic = styled.span`
@@ -60,21 +95,29 @@ const Topic = styled.span`
         transform: scale(1.05);
         background-color: #d0e9ff;
     }
+
+    @media (max-width: 768px) {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+    }
 `;
 
 function DifficultiesSection() {
     return (
-        <OuterSection>
-            <Container>
-                <Title>기초에 어려움을 겪는 개발자들 😱</Title>
-                <DevImage src={DevImageSrc} alt="고민하는 개발자" />
-                <TopicsContainer>
-                    <Topic>Closure 😱</Topic>
-                    <Topic>Promise 😰</Topic>
-                    <Topic>Event Loop 🫣</Topic>
-                </TopicsContainer>
-            </Container>
-        </OuterSection>
+        <>
+            <GlobalStyle />
+            <OuterSection>
+                <Container>
+                    <Title>기초에 어려움을 겪는 개발자들 😱</Title>
+                    <DevImage src={DevImageSrc} alt="고민하는 개발자" />
+                    <TopicsContainer>
+                        <Topic>Closure 😱</Topic>
+                        <Topic>Promise 😰</Topic>
+                        <Topic>Event Loop 🫣</Topic>
+                    </TopicsContainer>
+                </Container>
+            </OuterSection>
+        </>
     );
 }
 

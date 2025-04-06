@@ -1,7 +1,6 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
 
-// 배경 전체 컨테이너
 const Container = styled.section`
     width: 100%;
     height: 500px;
@@ -10,7 +9,12 @@ const Container = styled.section`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* 지마켓 산스 미디엄 폰트 사용 가정 */
+    padding: 1rem;
+
+    @media (max-width: 768px) {
+        height: auto;
+        padding: 2rem 1rem;
+    }
 `;
 
 const Heading = styled.h2`
@@ -18,22 +22,25 @@ const Heading = styled.h2`
     font-size: 1.6rem;
     color: #fff;
     text-align: center;
-    margin: 0 1rem 2rem; /* 여백 조절 */
+    margin: 0 1rem 2rem;
     line-height: 1.4;
+
+    @media (max-width: 768px) {
+        font-size: 1.4rem;
+        margin: 0 0.5rem 1.5rem;
+    }
 `;
 
 const ButtonContainer = styled.div`
     margin-top: 1rem;
 `;
 
-/* 깜빡임 애니메이션 */
 const blink = keyframes`
     0% { opacity: 1; }
     50% { opacity: 0.6; }
     100% { opacity: 1; }
 `;
 
-// 버튼 스타일
 const ActionButton = styled.button`
     font-family: 'GmarketSansMedium', sans-serif;
     font-size: 1.1rem;
@@ -44,23 +51,27 @@ const ActionButton = styled.button`
     border: none;
     border-radius: 6px;
     cursor: pointer;
-    transition: box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 
     &:hover {
         animation: ${blink} 1s infinite;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        transform: translateY(-2px);
+    }
+
+    @media (max-width: 768px) {
+        font-size: 1rem;
+        padding: 0.7rem 1.2rem;
     }
 `;
 
 function FinalSubscribeSection() {
     const scrollToTop = () => {
-        // 1초 동안 스크롤
         const duration = 1000;
         const start = window.pageYOffset;
         const startTime = performance.now();
 
-        // easeInOutQuad 함수: 부드러운 가속/감속 효과
         const easeInOutQuad = (t) =>
             t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
 

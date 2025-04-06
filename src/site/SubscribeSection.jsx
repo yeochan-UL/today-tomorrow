@@ -23,13 +23,17 @@ const Container = styled.section`
     width: 100%;
     max-width: 1000px;
     min-height: 60vh;
-    margin: 0 auto;
+    margin: 90px auto 0; /* 데스크탑: 상단 90px 마진 (네비 높이만큼) */
     padding: 2rem;
     background-color: #fff;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    @media (max-width: 768px) {
+        margin-top: 70px; /* 모바일: 상단 70px 마진 (네비 높이만큼) */
+    }
 `;
 
 const LogoImage = styled.img`

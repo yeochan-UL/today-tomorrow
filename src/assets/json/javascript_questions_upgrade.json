@@ -1,0 +1,802 @@
+[
+  {
+    "id": 1,
+    "title": "문제 1. 두 수의 합",
+    "description": "두 정수 a와 b가 주어질 때, 두 수의 합을 반환하는 함수를 작성하세요.",
+    "initialCode": "function sum(a, b) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(sum(1, 2));",
+    "solution": "function sum(a, b) {\n  return a + b;\n}",
+    "explanation": "단순히 a와 b를 더한 값을 반환합니다."
+  },
+  {
+    "id": 2,
+    "title": "문제 2. 두 수의 곱",
+    "description": "두 정수 a와 b가 주어질 때, 두 수의 곱을 반환하는 함수를 작성하세요.",
+    "initialCode": "function multiply(a, b) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(multiply(3, 4));",
+    "solution": "function multiply(a, b) {\n  return a * b;\n}",
+    "explanation": "단순히 a와 b를 곱한 값을 반환합니다."
+  },
+  {
+    "id": 3,
+    "title": "문제 3. 홀짝 판별",
+    "description": "정수 n이 주어질 때, n이 짝수이면 true, 홀수이면 false를 반환하는 함수를 작성하세요.",
+    "initialCode": "function isEven(n) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(isEven(4));",
+    "solution": "function isEven(n) {\n  return n % 2 === 0;\n}",
+    "explanation": "n을 2로 나눈 나머지를 통해 짝수인지 판별합니다."
+  },
+  {
+    "id": 4,
+    "title": "문제 4. 문자열 뒤집기",
+    "description": "문자열 s가 주어질 때, s를 뒤집은 문자열을 반환하는 함수를 작성하세요.",
+    "initialCode": "function reverseString(s) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(reverseString('hello'));",
+    "solution": "function reverseString(s) {\n  return s.split('').reverse().join('');\n}",
+    "explanation": "문자열을 배열로 변환한 후 reverse()로 뒤집고 join()을 통해 문자열로 변환합니다."
+  },
+  {
+    "id": 5,
+    "title": "문제 5. 모음 개수 세기",
+    "description": "문자열 s가 주어질 때, s에 포함된 모음(a, e, i, o, u, 대소문자 모두)의 개수를 반환하는 함수를 작성하세요.",
+    "initialCode": "function countVowels(s) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(countVowels('hello'));",
+    "solution": "function countVowels(s) {\n  return (s.match(/[aeiouAEIOU]/g) || []).length;\n}",
+    "explanation": "정규표현식을 사용해 모음에 해당하는 문자들을 찾고, 그 개수를 반환합니다."
+  },
+  {
+    "id": 6,
+    "title": "문제 6. 배열 최대값 찾기",
+    "description": "정수 배열 arr가 주어질 때, 배열 내에서 가장 큰 수를 반환하는 함수를 작성하세요.",
+    "initialCode": "function findMax(arr) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(findMax([1, 5, 3, 2]));",
+    "solution": "function findMax(arr) {\n  return Math.max(...arr);\n}",
+    "explanation": "Math.max와 전개 연산자를 사용하여 배열의 최대값을 구합니다."
+  },
+  {
+    "id": 7,
+    "title": "문제 7. 팩토리얼 계산",
+    "description": "정수 n이 주어질 때, n! (팩토리얼)을 계산하여 반환하는 함수를 작성하세요. (n은 0 이상의 정수)",
+    "initialCode": "function factorial(n) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(factorial(5));",
+    "solution": "function factorial(n) {\n  return n === 0 ? 1 : n * factorial(n - 1);\n}",
+    "explanation": "재귀 함수를 이용하여 팩토리얼을 계산합니다. 0!은 1입니다."
+  },
+  {
+    "id": 8,
+    "title": "문제 8. 팰린드롬 판별",
+    "description": "문자열 s가 주어질 때, s가 팰린드롬(앞뒤가 같은 문자열)인지 판별하는 함수를 작성하세요. 공백과 대소문자는 무시합니다.",
+    "initialCode": "function isPalindrome(s) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(isPalindrome('Level'));",
+    "solution": "function isPalindrome(s) {\n  const str = s.replace(/\\s+/g, '').toLowerCase();\n  return str === str.split('').reverse().join('');\n}",
+    "explanation": "공백 제거 및 대소문자 무시 후, 문자열이 뒤집은 문자열과 같은지 비교합니다."
+  },
+  {
+    "id": 9,
+    "title": "문제 9. 피보나치 수열 생성",
+    "description": "정수 n이 주어질 때, n개의 피보나치 수를 포함하는 배열을 반환하는 함수를 작성하세요. (첫 두 항은 0과 1입니다)",
+    "initialCode": "function fibonacci(n) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(fibonacci(5));",
+    "solution": "function fibonacci(n) {\n  if (n <= 0) return [];\n  if (n === 1) return [0];\n  const fib = [0, 1];\n  for (let i = 2; i < n; i++) {\n    fib.push(fib[i - 1] + fib[i - 2]);\n  }\n  return fib;\n}",
+    "explanation": "피보나치 수열은 이전 두 수의 합으로 계산됩니다. n이 1 이하인 경우를 고려합니다."
+  },
+  {
+    "id": 10,
+    "title": "문제 10. 깊은 복사 함수 작성",
+    "description": "임의의 객체 obj가 주어질 때, 해당 객체의 깊은 복사본을 반환하는 함수를 작성하세요. (객체 내부에 중첩된 객체가 있을 수 있습니다)",
+    "initialCode": "function deepCopy(obj) {\n  // 여기에 코드를 작성하세요\n}\n\nconst original = { a: 1, b: { c: 2 } };\nconsole.log(deepCopy(original));",
+    "solution": "function deepCopy(obj) {\n  if (obj === null || typeof obj !== 'object') return obj;\n  const copy = Array.isArray(obj) ? [] : {};\n  for (let key in obj) {\n    if (obj.hasOwnProperty(key)) {\n      copy[key] = deepCopy(obj[key]);\n    }\n  }\n  return copy;\n}",
+    "explanation": "재귀적으로 각 속성을 복사하여 객체의 깊은 복사를 수행합니다."
+  },
+  {
+    "id": 11,
+    "title": "문제 11. 각 단어 뒤집기",
+    "description": "문자열 s가 주어질 때, 각 단어의 문자 순서는 유지하되, 단어 내부의 문자들을 뒤집은 문자열을 반환하는 함수를 작성하세요.",
+    "initialCode": "function reverseWords(s) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(reverseWords(\"hello world\"));",
+    "solution": "function reverseWords(s) {\n  return s.split(\" \").map(word => word.split(\"\").reverse().join(\"\"))\n           .join(\" \");\n}",
+    "explanation": "문자열을 공백 기준으로 단어 단위로 분리한 후, 각 단어를 뒤집어 다시 공백으로 결합합니다."
+  },
+  {
+    "id": 12,
+    "title": "문제 12. 배열 요소 빈도수 계산",
+    "description": "정수 배열 arr가 주어질 때, 각 요소가 배열 내에서 몇 번 나타나는지 객체 형태로 반환하는 함수를 작성하세요.",
+    "initialCode": "function countOccurrences(arr) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(countOccurrences([1, 2, 2, 3, 3, 3]));",
+    "solution": "function countOccurrences(arr) {\n  return arr.reduce((acc, val) => {\n    acc[val] = (acc[val] || 0) + 1;\n    return acc;\n  }, {});\n}",
+    "explanation": "reduce 함수를 이용하여 배열의 각 요소의 빈도를 객체에 누적합니다."
+  },
+  {
+    "id": 13,
+    "title": "문제 13. 이메일 형식 검증",
+    "description": "문자열 email이 주어질 때, 해당 문자열이 유효한 이메일 형식을 갖추었는지 판별하는 함수를 작성하세요.",
+    "initialCode": "function isValidEmail(email) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(isValidEmail(\"test@example.com\"));",
+    "solution": "function isValidEmail(email) {\n  const regex = /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/;\n  return regex.test(email);\n}",
+    "explanation": "정규표현식을 사용하여 이메일의 기본 형식을 검증합니다."
+  },
+  {
+    "id": 14,
+    "title": "문제 14. 배열 고유값 추출",
+    "description": "배열 arr가 주어질 때, 중복된 요소를 제거하고 고유한 값들만을 포함하는 배열을 반환하는 함수를 작성하세요.",
+    "initialCode": "function uniqueArray(arr) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(uniqueArray([1, 2, 2, 3, 4, 4, 5]));",
+    "solution": "function uniqueArray(arr) {\n  return [...new Set(arr)];\n}",
+    "explanation": "Set 객체를 사용하여 배열의 중복된 요소를 제거한 후 다시 배열로 변환합니다."
+  },
+  {
+    "id": 15,
+    "title": "문제 15. 중첩 배열 평탄화",
+    "description": "중첩된 배열 arr가 주어질 때, 모든 중첩된 요소들을 하나의 배열로 평탄화하여 반환하는 함수를 작성하세요. (재귀 사용 권장)",
+    "initialCode": "function flattenArray(arr) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(flattenArray([1, [2, [3, 4], 5]]));",
+    "solution": "function flattenArray(arr) {\n  return arr.reduce((acc, val) => Array.isArray(val) ? acc.concat(flattenArray(val)) : acc.concat(val), []);\n}",
+    "explanation": "reduce와 재귀를 이용하여 배열 내의 모든 중첩 배열을 평탄화합니다."
+  },
+  {
+    "id": 16,
+    "title": "문제 16. 디바운스 함수 구현",
+    "description": "함수 func와 지연 시간 delay가 주어질 때, 연속 호출 시 마지막 호출만 실행되도록 하는 디바운스 함수를 작성하세요.",
+    "initialCode": "function debounce(func, delay) {\n  // 여기에 코드를 작성하세요\n}\n\n// 예시 사용법\nconst debouncedLog = debounce(() => console.log(\"Called!\"), 1000);\ndebouncedLog();\ndebouncedLog();\ndebouncedLog();",
+    "solution": "function debounce(func, delay) {\n  let timeoutId;\n  return function(...args) {\n    clearTimeout(timeoutId);\n    timeoutId = setTimeout(() => func.apply(this, args), delay);\n  };\n}",
+    "explanation": "클로저를 이용해 timeoutId를 저장하고, 호출 시마다 기존 타이머를 취소 후 새로운 타이머를 설정합니다."
+  },
+  {
+    "id": 17,
+    "title": "문제 17. 스로틀 함수 구현",
+    "description": "함수 func와 지연 시간 delay가 주어질 때, 지정된 시간 동안 한 번만 실행되도록 하는 스로틀 함수를 작성하세요.",
+    "initialCode": "function throttle(func, delay) {\n  // 여기에 코드를 작성하세요\n}\n\n// 예시 사용법\nconst throttledLog = throttle(() => console.log(\"Called!\"), 1000);\nsetInterval(throttledLog, 300);",
+    "solution": "function throttle(func, delay) {\n  let lastCall = 0;\n  return function(...args) {\n    const now = Date.now();\n    if (now - lastCall >= delay) {\n      lastCall = now;\n      func.apply(this, args);\n    }\n  };\n}",
+    "explanation": "마지막 호출 시간을 기록하고, 지정된 지연 시간 이후에만 함수를 실행하도록 합니다."
+  },
+  {
+    "id": 18,
+    "title": "문제 18. 이벤트Emitter 구현",
+    "description": "이벤트 이름과 콜백을 등록하고, 해당 이벤트가 발생하면 콜백을 실행하는 간단한 EventEmitter 클래스를 작성하세요. (on, off, emit 메서드 포함)",
+    "initialCode": "class EventEmitter {\n  constructor() {\n    // 여기에 코드를 작성하세요\n  }\n  \n  on(event, listener) {\n    // 여기에 코드를 작성하세요\n  }\n  \n  off(event, listener) {\n    // 여기에 코드를 작성하세요\n  }\n  \n  emit(event, ...args) {\n    // 여기에 코드를 작성하세요\n  }\n}\n\n// 사용 예시\nconst emitter = new EventEmitter();\nfunction callback(msg) { console.log(msg); }\nemitter.on(\"greet\", callback);\nemitter.emit(\"greet\", \"Hello!\");\nemitter.off(\"greet\", callback);\nemitter.emit(\"greet\", \"Hi again!\");",
+    "solution": "class EventEmitter {\n  constructor() {\n    this.events = {};\n  }\n  \n  on(event, listener) {\n    if (!this.events[event]) {\n      this.events[event] = [];\n    }\n    this.events[event].push(listener);\n  }\n  \n  off(event, listener) {\n    if (!this.events[event]) return;\n    this.events[event] = this.events[event].filter(l => l !== listener);\n  }\n  \n  emit(event, ...args) {\n    if (!this.events[event]) return;\n    this.events[event].forEach(listener => listener.apply(this, args));\n  }\n}",
+    "explanation": "객체를 사용하여 이벤트와 콜백을 관리하고, on, off, emit 메서드로 이벤트 등록, 해제 및 발생을 처리합니다."
+  },
+  {
+    "id": 19,
+    "title": "문제 19. 깊은 객체 비교",
+    "description": "두 객체 obj1과 obj2가 주어질 때, 객체의 모든 속성과 값이 동일한지 확인하는 깊은 비교 함수를 작성하세요.",
+    "initialCode": "function deepEqual(obj1, obj2) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(deepEqual({a: 1, b: {c: 2}}, {a: 1, b: {c: 2}}));",
+    "solution": "function deepEqual(obj1, obj2) {\n  if (obj1 === obj2) return true;\n  if (typeof obj1 !== 'object' || obj1 === null || typeof obj2 !== 'object' || obj2 === null) return false;\n  \n  const keys1 = Object.keys(obj1);\n  const keys2 = Object.keys(obj2);\n  if (keys1.length !== keys2.length) return false;\n  \n  for (let key of keys1) {\n    if (!keys2.includes(key) || !deepEqual(obj1[key], obj2[key])) {\n      return false;\n    }\n  }\n  \n  return true;\n}",
+    "explanation": "재귀적으로 객체의 각 속성과 값을 비교하여 깊은 동등성을 확인합니다."
+  },
+  {
+    "id": 20,
+    "title": "문제 20. 배열 순열 생성",
+    "description": "정수 배열 arr가 주어질 때, 배열의 모든 가능한 순열(permutations)을 반환하는 함수를 작성하세요.",
+    "initialCode": "function getPermutations(arr) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(getPermutations([1, 2, 3]));",
+    "solution": "function getPermutations(arr) {\n  const results = [];\n  if (arr.length === 0) return [];\n  if (arr.length === 1) return [arr];\n  \n  for (let i = 0; i < arr.length; i++) {\n    const current = arr[i];\n    const remaining = arr.slice(0, i).concat(arr.slice(i + 1));\n    const remainingPerms = getPermutations(remaining);\n    for (let perm of remainingPerms) {\n      results.push([current, ...perm]);\n    }\n  }\n  \n  return results;\n}",
+    "explanation": "재귀를 사용하여 배열의 각 요소를 선택한 후, 나머지 요소에 대한 순열을 생성하고 결합합니다."
+  },
+  {
+    "id": 21,
+    "title": "문제 21. 프라미스 체인 실행",
+    "description": "비동기 작업을 수행하는 여러 함수가 주어질 때, 이 함수들을 순차적으로 실행하여 각 함수의 결과를 다음 함수에 전달하는 함수를 작성하세요. 각 함수는 프라미스를 반환합니다.",
+    "initialCode": "function runPromiseChain(funcs) {\n  // 여기에 코드를 작성하세요\n}\n\n// 예시 사용법\nconst promiseFuncs = [\n  () => Promise.resolve(1),\n  (prev) => Promise.resolve(prev + 2),\n  (prev) => Promise.resolve(prev * 3)\n];\n\nrunPromiseChain(promiseFuncs).then(result => console.log(result));",
+    "solution": "function runPromiseChain(funcs) {\n  return funcs.reduce((prevPromise, func) => {\n    return prevPromise.then(result => func(result));\n  }, Promise.resolve());\n}",
+    "explanation": "reduce를 사용하여 프라미스 체인을 구성하고, 각 함수의 결과를 다음 함수에 전달하며 순차적으로 실행합니다."
+  },
+  {
+    "id": 22,
+    "title": "문제 22. 메모이제이션 함수 구현",
+    "description": "함수의 계산 결과를 캐싱하여 동일한 인자로 호출 시 캐시된 결과를 반환하는 메모이제이션 함수를 작성하세요.",
+    "initialCode": "function memoize(fn) {\n  // 여기에 코드를 작성하세요\n}\n\n// 예시 사용법\nfunction add(a, b) { return a + b; }\nconst memoizedAdd = memoize(add);\nconsole.log(memoizedAdd(2, 3));",
+    "solution": "function memoize(fn) {\n  const cache = {};\n  return function(...args) {\n    const key = JSON.stringify(args);\n    if (cache.hasOwnProperty(key)) {\n      return cache[key];\n    }\n    const result = fn(...args);\n    cache[key] = result;\n    return result;\n  };\n}",
+    "explanation": "입력 인자를 문자열로 변환하여 캐시 키로 사용하고, 캐시에 저장된 결과가 있다면 반환하며, 그렇지 않으면 함수를 실행하여 결과를 캐싱합니다."
+  },
+  {
+    "id": 23,
+    "title": "문제 23. async/await를 사용한 비동기 함수 작성",
+    "description": "비동기 API 호출을 모의하는 함수를 async/await를 사용하여 작성하세요. 1초 후에 'data'를 반환하는 함수를 작성합니다.",
+    "initialCode": "async function fetchData() {\n  // 여기에 코드를 작성하세요\n}\n\nfetchData().then(data => console.log(data));",
+    "solution": "async function fetchData() {\n  return new Promise(resolve => {\n    setTimeout(() => resolve('data'), 1000);\n  });\n}",
+    "explanation": "async 함수 내부에서 Promise를 생성하고, setTimeout을 이용해 1초 후에 'data'를 반환합니다."
+  },
+  {
+    "id": 24,
+    "title": "문제 24. 클로저를 이용한 카운터 함수 구현",
+    "description": "함수 createCounter를 작성하여, 호출할 때마다 내부의 카운트가 증가하는 함수를 반환하세요.",
+    "initialCode": "function createCounter() {\n  // 여기에 코드를 작성하세요\n}\n\nconst counter = createCounter();\nconsole.log(counter()); // 1\nconsole.log(counter()); // 2",
+    "solution": "function createCounter() {\n  let count = 0;\n  return function() {\n    return ++count;\n  };\n}",
+    "explanation": "내부 변수 count를 클로저로 감싸서 외부에서 직접 접근할 수 없도록 하고, 호출할 때마다 count를 증가시킵니다."
+  },
+  {
+    "id": 25,
+    "title": "문제 25. 클래스 상속과 메소드 오버라이딩",
+    "description": "부모 클래스 Animal과 이를 상속받은 Dog 클래스를 작성하세요. Dog 클래스는 speak 메소드를 오버라이딩하여 '<이름> 멍멍'을 반환해야 합니다.",
+    "initialCode": "class Animal {\n  constructor(name) {\n    this.name = name;\n  }\n  speak() {\n    // 여기에 코드를 작성하세요\n  }\n}\n\nclass Dog extends Animal {\n  // 여기에 코드를 작성하세요\n}\n\nconst dog = new Dog('바둑이');\nconsole.log(dog.speak());",
+    "solution": "class Animal {\n  constructor(name) {\n    this.name = name;\n  }\n  speak() {\n    return `${this.name} makes a noise.`;\n  }\n}\n\nclass Dog extends Animal {\n  speak() {\n    return `${this.name} 멍멍`;\n  }\n}\n\nconst dog = new Dog('바둑이');\nconsole.log(dog.speak());",
+    "explanation": "ES6 클래스를 이용하여 Animal 클래스를 정의하고, Dog 클래스가 이를 상속받아 speak 메소드를 오버라이딩합니다."
+  },
+  {
+    "id": 26,
+    "title": "문제 26. 객체 불변성 유지 (Deep Freeze)",
+    "description": "객체와 그 내부의 중첩 객체들을 모두 동결하는 deepFreeze 함수를 작성하세요.",
+    "initialCode": "function deepFreeze(obj) {\n  // 여기에 코드를 작성하세요\n}\n\nconst person = { name: 'John', address: { city: 'Seoul' } };\ndeepFreeze(person);\nperson.address.city = 'Busan';\nconsole.log(person.address.city); // 'Seoul'이어야 합니다",
+    "solution": "function deepFreeze(obj) {\n  Object.freeze(obj);\n  Object.keys(obj).forEach(key => {\n    if (typeof obj[key] === 'object' && obj[key] !== null && !Object.isFrozen(obj[key])) {\n      deepFreeze(obj[key]);\n    }\n  });\n  return obj;\n}",
+    "explanation": "재귀적으로 객체의 각 속성을 동결하여 객체의 불변성을 보장합니다."
+  },
+  {
+    "id": 27,
+    "title": "문제 27. 함수 커링 구현",
+    "description": "여러 인자를 받는 함수를 연속적인 단일 인자 함수 호출 형태로 변환하는 curry 함수를 작성하세요. 예를 들어, sum(1)(2)(3) = 6이 되어야 합니다.",
+    "initialCode": "function curry(fn) {\n  // 여기에 코드를 작성하세요\n}\n\nfunction sum(a, b, c) {\n  return a + b + c;\n}\n\nconst curriedSum = curry(sum);\nconsole.log(curriedSum(1)(2)(3));",
+    "solution": "function curry(fn) {\n  return function curried(...args) {\n    if (args.length >= fn.length) {\n      return fn(...args);\n    } else {\n      return function(...args2) {\n        return curried(...args, ...args2);\n      };\n    }\n  };\n}",
+    "explanation": "함수의 매개변수 개수(fn.length)를 기준으로 충분한 인자가 모이면 실행하고, 그렇지 않으면 인자를 계속 받아서 실행합니다."
+  },
+  {
+    "id": 28,
+    "title": "문제 28. 제너레이터를 사용한 무한 피보나치 수열",
+    "description": "무한 피보나치 수열을 생성하는 제너레이터 함수를 작성하세요.",
+    "initialCode": "function* fibonacciGenerator() {\n  // 여기에 코드를 작성하세요\n}\n\nconst gen = fibonacciGenerator();\nconsole.log(gen.next().value); // 0\nconsole.log(gen.next().value); // 1\nconsole.log(gen.next().value); // 1",
+    "solution": "function* fibonacciGenerator() {\n  let a = 0, b = 1;\n  while (true) {\n    yield a;\n    [a, b] = [b, a + b];\n  }\n}",
+    "explanation": "제너레이터 함수에서 무한 루프를 사용하여 피보나치 수열의 값을 순차적으로 반환합니다."
+  },
+  {
+    "id": 29,
+    "title": "문제 29. 모듈 패턴을 이용한 은닉화",
+    "description": "IIFE를 사용하여 private 변수와 public 메소드를 가진 counter 모듈을 작성하세요. counter 모듈은 내부의 count 값을 증가시키거나 반환하는 메소드를 제공해야 합니다.",
+    "initialCode": "const counter = (function() {\n  // 여기에 코드를 작성하세요\n})();\n\nconsole.log(counter.getCount());\ncounter.increment();\nconsole.log(counter.getCount());",
+    "solution": "const counter = (function() {\n  let count = 0;\n  return {\n    increment: function() { count++; },\n    getCount: function() { return count; }\n  };\n})();",
+    "explanation": "즉시 실행 함수(IIFE)를 사용하여 private 변수 count를 은닉하고, 이를 조작할 수 있는 public 메소드를 반환합니다."
+  },
+  {
+    "id": 30,
+    "title": "문제 30. 프로미스 병렬 처리 구현 (Promise.all 대체)",
+    "description": "여러 개의 프라미스를 배열로 받아, 모든 프라미스가 완료될 때까지 기다리고 결과를 배열로 반환하는 promiseAll 함수를 작성하세요. Promise.all은 사용하지 마세요.",
+    "initialCode": "function promiseAll(promises) {\n  // 여기에 코드를 작성하세요\n}\n\nconst promises = [\n  Promise.resolve(1),\n  Promise.resolve(2),\n  Promise.resolve(3)\n];\n\npromiseAll(promises).then(results => console.log(results));",
+    "solution": "function promiseAll(promises) {\n  return new Promise((resolve, reject) => {\n    const results = [];\n    let count = 0;\n    promises.forEach((p, i) => {\n      Promise.resolve(p)\n        .then(result => {\n          results[i] = result;\n          count++;\n          if (count === promises.length) {\n            resolve(results);\n          }\n        })\n        .catch(reject);\n    });\n  });\n}",
+    "explanation": "각 프라미스의 결과를 순서대로 results 배열에 저장하고, 모든 프라미스가 완료되면 결과 배열을 반환합니다."
+  },
+  {
+    "id": 31,
+    "title": "문제 31. 이벤트 위임 구현",
+    "description": "HTML 리스트(ul#list)에서 클릭된 항목(li)의 텍스트를 출력하는 이벤트 위임 코드를 작성하세요.",
+    "initialCode": "document.getElementById('list').addEventListener('click', function(e) {\n  // 여기에 코드를 작성하세요\n});",
+    "solution": "document.getElementById('list').addEventListener('click', function(e) {\n  if (e.target && e.target.nodeName === 'LI') {\n    console.log(e.target.textContent);\n  }\n});",
+    "explanation": "이벤트 버블링을 활용하여 ul 요소에 클릭 이벤트를 등록하고, 클릭된 대상이 li 태그인지 확인한 후 텍스트를 출력합니다."
+  },
+  {
+    "id": 32,
+    "title": "문제 32. 재귀적 DOM 트리 탐색",
+    "description": "DOM 트리의 루트 요소가 주어질 때, 모든 자식 요소의 태그 이름을 배열로 반환하는 함수를 작성하세요.",
+    "initialCode": "function getAllTagNames(root) {\n  // 여기에 코드를 작성하세요\n}\n\n// 예시: document.body를 루트로 사용\nconsole.log(getAllTagNames(document.body));",
+    "solution": "function getAllTagNames(root) {\n  const tags = [];\n  function traverse(node) {\n    if (node.tagName) {\n      tags.push(node.tagName);\n    }\n    node.childNodes.forEach(child => {\n      if (child.nodeType === 1) { // 요소 노드\n        traverse(child);\n      }\n    });\n  }\n  traverse(root);\n  return tags;\n}",
+    "explanation": "재귀 함수를 사용하여 DOM 트리의 각 요소를 순회하며, 태그 이름을 배열에 저장합니다."
+  },
+  {
+    "id": 33,
+    "title": "문제 33. 커스텀 에러 클래스 생성",
+    "description": "Error 클래스를 상속받아 CustomError 클래스를 작성하세요. CustomError는 message와 errorCode를 인자로 받아 해당 속성으로 저장해야 합니다.",
+    "initialCode": "class CustomError extends Error {\n  constructor(message, errorCode) {\n    // 여기에 코드를 작성하세요\n  }\n}\n\n// 예시 사용법\ntry {\n  throw new CustomError('Something went wrong', 500);\n} catch (e) {\n  console.log(e.message, e.errorCode);\n}",
+    "solution": "class CustomError extends Error {\n  constructor(message, errorCode) {\n    super(message);\n    this.errorCode = errorCode;\n  }\n}\n\n// 예시 사용법\ntry {\n  throw new CustomError('Something went wrong', 500);\n} catch (e) {\n  console.log(e.message, e.errorCode);\n}",
+    "explanation": "Error 클래스를 상속받아 CustomError를 구현하고, 생성자에서 message와 errorCode를 설정합니다."
+  },
+  {
+    "id": 34,
+    "title": "문제 34. 이진 탐색 (Binary Search)",
+    "description": "정렬된 정수 배열 arr와 목표 값 target이 주어질 때, target의 인덱스를 반환하거나, 존재하지 않으면 -1을 반환하는 이진 탐색 함수를 작성하세요.",
+    "initialCode": "function binarySearch(arr, target) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(binarySearch([1, 3, 5, 7, 9], 5));",
+    "solution": "function binarySearch(arr, target) {\n  let left = 0, right = arr.length - 1;\n  while (left <= right) {\n    const mid = Math.floor((left + right) / 2);\n    if (arr[mid] === target) return mid;\n    else if (arr[mid] < target) left = mid + 1;\n    else right = mid - 1;\n  }\n  return -1;\n}",
+    "explanation": "이진 탐색 알고리즘을 사용하여 정렬된 배열에서 목표 값을 효율적으로 찾습니다."
+  },
+  {
+    "id": 35,
+    "title": "문제 35. 정렬된 배열 병합",
+    "description": "두 개의 정렬된 배열 arr1과 arr2가 주어질 때, 두 배열을 하나의 정렬된 배열로 병합하는 함수를 작성하세요.",
+    "initialCode": "function mergeSortedArrays(arr1, arr2) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(mergeSortedArrays([1, 3, 5], [2, 4, 6]));",
+    "solution": "function mergeSortedArrays(arr1, arr2) {\n  const merged = [];\n  let i = 0, j = 0;\n  while (i < arr1.length && j < arr2.length) {\n    if (arr1[i] < arr2[j]) {\n      merged.push(arr1[i++]);\n    } else {\n      merged.push(arr2[j++]);\n    }\n  }\n  return merged.concat(arr1.slice(i)).concat(arr2.slice(j));\n}",
+    "explanation": "두 배열의 포인터를 사용하여 비교 후 결과 배열에 순서대로 추가하는 방식으로 병합합니다."
+  },
+  {
+    "id": 36,
+    "title": "문제 36. 퀵소트 구현",
+    "description": "정수 배열 arr가 주어질 때, 퀵소트 알고리즘을 사용하여 배열을 정렬하는 함수를 작성하세요.",
+    "initialCode": "function quickSort(arr) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(quickSort([3, 6, 2, 7, 1]));",
+    "solution": "function quickSort(arr) {\n  if (arr.length <= 1) return arr;\n  const pivot = arr[Math.floor(arr.length / 2)];\n  const left = arr.filter(x => x < pivot);\n  const middle = arr.filter(x => x === pivot);\n  const right = arr.filter(x => x > pivot);\n  return quickSort(left).concat(middle, quickSort(right));\n}",
+    "explanation": "퀵소트는 분할 정복 알고리즘으로, 피벗을 기준으로 작은 값과 큰 값으로 나누어 재귀적으로 정렬합니다."
+  },
+  {
+    "id": 37,
+    "title": "문제 37. 아나그램 판별",
+    "description": "두 문자열 str1과 str2가 주어질 때, 두 문자열이 아나그램(순서와 상관없이 동일한 문자 구성)을 이루는지 판별하는 함수를 작성하세요. (공백과 대소문자 무시)",
+    "initialCode": "function areAnagrams(str1, str2) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(areAnagrams('Listen', 'Silent'));\n",
+    "solution": "function areAnagrams(str1, str2) {\n  const normalize = str => str.replace(/\\s+/g, '').toLowerCase().split('').sort().join('');\n  return normalize(str1) === normalize(str2);\n}",
+    "explanation": "두 문자열을 공백 제거, 소문자 변환, 정렬 과정을 거쳐 동일한지 비교합니다."
+  },
+  {
+    "id": 38,
+    "title": "문제 38. 최장 공통 접두사",
+    "description": "문자열 배열 strs가 주어질 때, 모든 문자열의 공통 접두사 중 가장 긴 접두사를 반환하는 함수를 작성하세요.",
+    "initialCode": "function longestCommonPrefix(strs) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(longestCommonPrefix(['flower', 'flow', 'flight']));",
+    "solution": "function longestCommonPrefix(strs) {\n  if (!strs.length) return '';\n  let prefix = strs[0];\n  for (let i = 1; i < strs.length; i++) {\n    while (strs[i].indexOf(prefix) !== 0) {\n      prefix = prefix.slice(0, -1);\n      if (prefix === '') return '';\n    }\n  }\n  return prefix;\n}",
+    "explanation": "첫 번째 문자열을 기준으로 접두사를 점진적으로 줄여가며 모든 문자열에 공통인지 확인합니다."
+  },
+  {
+    "id": 39,
+    "title": "문제 39. 고급 디바운스 함수 구현 (Leading & Trailing 옵션)",
+    "description": "함수 func와 지연 시간 delay, 옵션 객체 {leading: boolean, trailing: boolean}가 주어질 때, leading과 trailing 옵션에 따라 실행되는 고급 디바운스 함수를 작성하세요.",
+    "initialCode": "function debounceAdvanced(func, delay, options = {leading: false, trailing: true}) {\n  // 여기에 코드를 작성하세요\n}\n\n// 예시 사용법\nconst debouncedFunc = debounceAdvanced(() => console.log('Called'), 500, {leading: true, trailing: false});\ndebouncedFunc();",
+    "solution": "function debounceAdvanced(func, delay, options = {leading: false, trailing: true}) {\n  let timeoutId = null;\n  let lastCall = 0;\n  return function(...args) {\n    const now = Date.now();\n    if (options.leading && now - lastCall > delay) {\n      func.apply(this, args);\n      lastCall = now;\n    }\n    clearTimeout(timeoutId);\n    if (options.trailing) {\n      timeoutId = setTimeout(() => {\n        func.apply(this, args);\n        lastCall = Date.now();\n      }, delay);\n    }\n  };\n}",
+    "explanation": "leading 옵션은 즉시 실행하고, trailing 옵션은 마지막 호출 후 지연 시간 후 실행하는 디바운스 함수를 구현합니다."
+  },
+  {
+    "id": 40,
+    "title": "문제 40. PubSub (Publish/Subscribe) 시스템 구현",
+    "description": "구독(subscribe), 구독 해제(unsubscribe), 발행(publish) 기능을 갖춘 PubSub 클래스를 작성하세요.",
+    "initialCode": "class PubSub {\n  // 여기에 코드를 작성하세요\n}\n\n// 예시 사용법\nconst pubsub = new PubSub();\nfunction callback(msg) { console.log(msg); }\npubsub.subscribe('event', callback);\npubsub.publish('event', 'Hello World');\npubsub.unsubscribe('event', callback);\n",
+    "solution": "class PubSub {\n  constructor() {\n    this.events = {};\n  }\n  subscribe(event, listener) {\n    if (!this.events[event]) {\n      this.events[event] = [];\n    }\n    this.events[event].push(listener);\n  }\n  unsubscribe(event, listener) {\n    if (!this.events[event]) return;\n    this.events[event] = this.events[event].filter(fn => fn !== listener);\n  }\n  publish(event, ...args) {\n    if (!this.events[event]) return;\n    this.events[event].forEach(fn => fn.apply(this, args));\n  }\n}",
+    "explanation": "이벤트 이름을 키로 사용하여 콜백 배열을 관리하고, 구독, 구독 해제, 발행 기능을 구현합니다."
+  },
+  {
+    "id": 41,
+    "title": "문제 41. LRU 캐시 구현",
+    "description": "최대 용량 capacity가 주어질 때, get(key)와 put(key, value) 메서드를 지원하는 LRU(Least Recently Used) 캐시 클래스를 작성하세요.",
+    "initialCode": "class LRUCache {\n  // 여기에 코드를 작성하세요\n}\n\n// 예시 사용법\nconst cache = new LRUCache(2);\ncache.put(1, 'one');\ncache.put(2, 'two');\nconsole.log(cache.get(1));\ncache.put(3, 'three');\nconsole.log(cache.get(2)); // -1 혹은 undefined\n",
+    "solution": "class LRUCache {\n  constructor(capacity) {\n    this.capacity = capacity;\n    this.cache = new Map();\n  }\n  get(key) {\n    if (!this.cache.has(key)) return -1;\n    const value = this.cache.get(key);\n    this.cache.delete(key);\n    this.cache.set(key, value);\n    return value;\n  }\n  put(key, value) {\n    if (this.cache.has(key)) {\n      this.cache.delete(key);\n    }\n    this.cache.set(key, value);\n    if (this.cache.size > this.capacity) {\n      const firstKey = this.cache.keys().next().value;\n      this.cache.delete(firstKey);\n    }\n  }\n}",
+    "explanation": "JavaScript의 Map을 사용하여 캐시를 구현하며, 사용 시마다 해당 키를 재삽입하여 순서를 최신화합니다."
+  },
+  {
+    "id": 42,
+    "title": "문제 42. 정수를 로마 숫자로 변환",
+    "description": "1부터 3999까지의 정수가 주어질 때, 해당 정수를 로마 숫자로 변환하는 함수를 작성하세요.",
+    "initialCode": "function intToRoman(num) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(intToRoman(1994));",
+    "solution": "function intToRoman(num) {\n  const romans = [\n    { value: 1000, symbol: 'M' },\n    { value: 900, symbol: 'CM' },\n    { value: 500, symbol: 'D' },\n    { value: 400, symbol: 'CD' },\n    { value: 100, symbol: 'C' },\n    { value: 90, symbol: 'XC' },\n    { value: 50, symbol: 'L' },\n    { value: 40, symbol: 'XL' },\n    { value: 10, symbol: 'X' },\n    { value: 9, symbol: 'IX' },\n    { value: 5, symbol: 'V' },\n    { value: 4, symbol: 'IV' },\n    { value: 1, symbol: 'I' }\n  ];\n  let result = '';\n  for (let {value, symbol} of romans) {\n    while (num >= value) {\n      result += symbol;\n      num -= value;\n    }\n  }\n  return result;\n}",
+    "explanation": "정수 값을 로마 숫자와 매핑된 값들로 나누어 해당하는 로마 기호를 반복해서 붙입니다."
+  },
+  {
+    "id": 43,
+    "title": "문제 43. Luhn 알고리즘을 이용한 신용카드 검증",
+    "description": "신용카드 번호를 문자열로 입력받아, Luhn 알고리즘을 통해 유효한 번호인지 검증하는 함수를 작성하세요.",
+    "initialCode": "function isValidCreditCard(number) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(isValidCreditCard('4539578763621486'));",
+    "solution": "function isValidCreditCard(number) {\n  const digits = number.replace(/\\D/g, '').split('').map(Number);\n  let sum = 0;\n  let double = false;\n  for (let i = digits.length - 1; i >= 0; i--) {\n    let digit = digits[i];\n    if (double) {\n      digit *= 2;\n      if (digit > 9) digit -= 9;\n    }\n    sum += digit;\n    double = !double;\n  }\n  return sum % 10 === 0;\n}",
+    "explanation": "Luhn 알고리즘을 통해 각 자리수를 조작하여 합을 구한 후, 10으로 나누어 떨어지는지 확인합니다."
+  },
+  {
+    "id": 44,
+    "title": "문제 44. 반복문을 사용한 배열 평탄화 (비재귀적)",
+    "description": "중첩된 배열 arr가 주어질 때, 반복문과 스택을 사용하여 배열을 평탄화하는 함수를 작성하세요.",
+    "initialCode": "function flattenArrayIterative(arr) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(flattenArrayIterative([1, [2, [3, 4], 5]]));",
+    "solution": "function flattenArrayIterative(arr) {\n  const stack = [...arr];\n  const result = [];\n  while (stack.length) {\n    const next = stack.pop();\n    if (Array.isArray(next)) {\n      stack.push(...next);\n    } else {\n      result.push(next);\n    }\n  }\n  return result.reverse();\n}",
+    "explanation": "스택을 이용하여 배열을 순회하며 요소들을 하나의 배열로 평탄화합니다."
+  },
+  {
+    "id": 45,
+    "title": "문제 45. 올바른 괄호 조합 생성",
+    "description": "정수 n이 주어질 때, n쌍의 괄호로 만들 수 있는 모든 올바른 괄호 조합을 반환하는 함수를 작성하세요.",
+    "initialCode": "function generateParentheses(n) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(generateParentheses(3));",
+    "solution": "function generateParentheses(n) {\n  const result = [];\n  function backtrack(s, open, close) {\n    if (s.length === 2 * n) {\n      result.push(s);\n      return;\n    }\n    if (open < n) backtrack(s + '(', open + 1, close);\n    if (close < open) backtrack(s + ')', open, close + 1);\n  }\n  backtrack('', 0, 0);\n  return result;\n}",
+    "explanation": "백트래킹을 사용하여 가능한 모든 올바른 괄호 조합을 생성합니다."
+  },
+  {
+    "id": 46,
+    "title": "문제 46. 순환 참조를 고려한 깊은 복제 (Deep Clone Advanced)",
+    "description": "객체 obj가 주어질 때, 순환 참조를 포함할 수 있는 객체를 깊은 복제하는 함수를 작성하세요.",
+    "initialCode": "function deepCloneAdvanced(obj, hash = new WeakMap()) {\n  // 여기에 코드를 작성하세요\n}\n\nconst a = { val: 1 };\na.self = a;\nconsole.log(deepCloneAdvanced(a));",
+    "solution": "function deepCloneAdvanced(obj, hash = new WeakMap()) {\n  if (obj === null || typeof obj !== 'object') return obj;\n  if (hash.has(obj)) return hash.get(obj);\n  const clone = Array.isArray(obj) ? [] : {};\n  hash.set(obj, clone);\n  Object.keys(obj).forEach(key => {\n    clone[key] = deepCloneAdvanced(obj[key], hash);\n  });\n  return clone;\n}",
+    "explanation": "WeakMap을 사용하여 이미 복제한 객체를 저장하고, 순환 참조가 발생하지 않도록 합니다."
+  },
+  {
+    "id": 47,
+    "title": "문제 47. 행렬 곱셈",
+    "description": "두 행렬 A와 B가 주어질 때, 행렬 곱셈을 수행하여 결과 행렬을 반환하는 함수를 작성하세요. (행렬 곱셈 규칙에 따라 A의 열의 수와 B의 행의 수가 일치해야 합니다)",
+    "initialCode": "function matrixMultiply(A, B) {\n  // 여기에 코드를 작성하세요\n}\n\nconst A = [[1, 2], [3, 4]];\nconst B = [[5, 6], [7, 8]];\nconsole.log(matrixMultiply(A, B));",
+    "solution": "function matrixMultiply(A, B) {\n  const rowsA = A.length, colsA = A[0].length, colsB = B[0].length;\n  const result = Array.from({ length: rowsA }, () => Array(colsB).fill(0));\n  for (let i = 0; i < rowsA; i++) {\n    for (let j = 0; j < colsB; j++) {\n      for (let k = 0; k < colsA; k++) {\n        result[i][j] += A[i][k] * B[k][j];\n      }\n    }\n  }\n  return result;\n}",
+    "explanation": "중첩된 for문을 사용하여 행렬 곱셈 규칙에 따라 각 요소를 계산합니다."
+  },
+  {
+    "id": 48,
+    "title": "문제 48. 첫 번째 반복되지 않는 문자 찾기",
+    "description": "문자열 s가 주어질 때, 반복되지 않는 첫 번째 문자를 반환하는 함수를 작성하세요. 반복되지 않는 문자가 없다면 null을 반환합니다.",
+    "initialCode": "function firstNonRepeatingChar(s) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(firstNonRepeatingChar('swiss'));\n",
+    "solution": "function firstNonRepeatingChar(s) {\n  const freq = {};\n  for (let char of s) {\n    freq[char] = (freq[char] || 0) + 1;\n  }\n  for (let char of s) {\n    if (freq[char] === 1) return char;\n  }\n  return null;\n}",
+    "explanation": "문자열의 각 문자의 빈도를 계산한 후, 순서대로 첫 번째로 빈도가 1인 문자를 반환합니다."
+  },
+  {
+    "id": 49,
+    "title": "문제 49. 누락된 숫자 찾기",
+    "description": "1부터 n까지의 정수가 담긴 배열 arr가 주어질 때, 누락된 숫자를 찾아 반환하는 함수를 작성하세요.",
+    "initialCode": "function findMissingNumber(arr, n) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(findMissingNumber([1, 2, 4, 5], 5));",
+    "solution": "function findMissingNumber(arr, n) {\n  const expectedSum = (n * (n + 1)) / 2;\n  const actualSum = arr.reduce((sum, num) => sum + num, 0);\n  return expectedSum - actualSum;\n}",
+    "explanation": "1부터 n까지의 합과 배열의 합의 차이를 계산하여 누락된 숫자를 찾습니다."
+  },
+  {
+    "id": 50,
+    "title": "문제 50. 기본 런-길이 인코딩 (Run-Length Encoding)",
+    "description": "문자열 s가 주어질 때, 연속된 문자의 개수와 문자를 이용하여 문자열을 압축하는 런-길이 인코딩 함수를 작성하세요.",
+    "initialCode": "function runLengthEncode(s) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(runLengthEncode('aaabbc'));\n",
+    "solution": "function runLengthEncode(s) {\n  let result = '';\n  let count = 1;\n  for (let i = 1; i <= s.length; i++) {\n    if (s[i] === s[i - 1]) {\n      count++;\n    } else {\n      result += s[i - 1] + count;\n      count = 1;\n    }\n  }\n  return result;\n}",
+    "explanation": "문자열을 순회하며 연속된 문자의 개수를 세어 문자와 함께 결과 문자열에 추가합니다."
+  },
+  {
+    "id": 51,
+    "title": "문제 51. Promise.race 구현",
+    "description": "여러 개의 프라미스를 배열로 받아, 가장 먼저 해결되거나 거부된 프라미스를 반환하는 promiseRace 함수를 작성하세요.",
+    "initialCode": "function promiseRace(promises) {\n  // 여기에 코드를 작성하세요\n}\n\n// 예시 사용법\nconst p1 = new Promise(resolve => setTimeout(() => resolve('first'), 500));\nconst p2 = new Promise(resolve => setTimeout(() => resolve('second'), 100));\n\npromiseRace([p1, p2]).then(result => console.log(result));",
+    "solution": "function promiseRace(promises) {\n  return new Promise((resolve, reject) => {\n    promises.forEach(p => {\n      Promise.resolve(p).then(resolve).catch(reject);\n    });\n  });\n}",
+    "explanation": "각 프라미스를 순회하면서, 가장 먼저 해결되거나 거부된 프라미스의 결과를 반환합니다."
+  },
+  {
+    "id": 52,
+    "title": "문제 52. 객체 깊은 병합 (Deep Merge)",
+    "description": "두 객체 obj1과 obj2가 주어질 때, 중첩된 객체를 포함하여 깊게 병합하는 deepMerge 함수를 작성하세요.",
+    "initialCode": "function deepMerge(obj1, obj2) {\n  // 여기에 코드를 작성하세요\n}\n\nconst a = { x: 1, y: { z: 2 } };\nconst b = { y: { w: 3 }, v: 4 };\nconsole.log(deepMerge(a, b));",
+    "solution": "function deepMerge(obj1, obj2) {\n  const result = { ...obj1 };\n  for (const key in obj2) {\n    if (obj2.hasOwnProperty(key)) {\n      if (typeof obj2[key] === 'object' && obj2[key] !== null && result[key] && typeof result[key] === 'object') {\n        result[key] = deepMerge(result[key], obj2[key]);\n      } else {\n        result[key] = obj2[key];\n      }\n    }\n  }\n  return result;\n}",
+    "explanation": "재귀적으로 두 객체의 속성을 병합하여, 중첩 객체까지도 올바르게 합칩니다."
+  },
+  {
+    "id": 53,
+    "title": "문제 53. 중첩 객체 평탄화 (Flatten Nested Object)",
+    "description": "중첩된 객체를 받아, 키를 점(.)으로 연결하여 평탄화된 객체를 반환하는 flattenObject 함수를 작성하세요.",
+    "initialCode": "function flattenObject(obj, parentKey = '', result = {}) {\n  // 여기에 코드를 작성하세요\n}\n\nconst nested = { a: 1, b: { c: 2, d: { e: 3 } } };\nconsole.log(flattenObject(nested));",
+    "solution": "function flattenObject(obj, parentKey = '', result = {}) {\n  for (let key in obj) {\n    if (obj.hasOwnProperty(key)) {\n      const newKey = parentKey ? parentKey + '.' + key : key;\n      if (typeof obj[key] === 'object' && obj[key] !== null && !Array.isArray(obj[key])) {\n        flattenObject(obj[key], newKey, result);\n      } else {\n        result[newKey] = obj[key];\n      }\n    }\n  }\n  return result;\n}",
+    "explanation": "재귀적으로 객체를 순회하며, 중첩된 키들을 점(.)으로 연결한 새로운 평탄화된 객체를 생성합니다."
+  },
+  {
+    "id": 54,
+    "title": "문제 54. JSON 파싱 시 날짜 문자열 변환",
+    "description": "JSON 문자열을 파싱할 때, ISO 8601 형식의 날짜 문자열을 Date 객체로 변환하는 reviver를 사용하여 객체를 반환하는 함수를 작성하세요.",
+    "initialCode": "function parseJSONWithDate(jsonStr) {\n  // 여기에 코드를 작성하세요\n}\n\nconst jsonData = '{\"name\": \"John\", \"date\": \"2023-04-06T12:00:00Z\"}';\nconsole.log(parseJSONWithDate(jsonData));",
+    "solution": "function parseJSONWithDate(jsonStr) {\n  return JSON.parse(jsonStr, (key, value) => {\n    if (typeof value === 'string' && /^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}Z$/.test(value)) {\n      return new Date(value);\n    }\n    return value;\n  });\n}",
+    "explanation": "JSON.parse의 reviver 함수를 활용하여 날짜 형식의 문자열을 Date 객체로 변환합니다."
+  },
+  {
+    "id": 55,
+    "title": "문제 55. 이진 트리 레벨 순회 (Level Order Traversal)",
+    "description": "이진 트리의 루트 노드가 주어질 때, 레벨 순서대로 각 레벨의 노드 값을 배열로 반환하는 levelOrderTraversal 함수를 작성하세요.",
+    "initialCode": "function levelOrderTraversal(root) {\n  // 여기에 코드를 작성하세요\n}\n\n// 예시 트리\nconst tree = {\n  value: 1,\n  left: { value: 2, left: { value: 4 }, right: { value: 5 } },\n  right: { value: 3 }\n};\n\nconsole.log(levelOrderTraversal(tree));",
+    "solution": "function levelOrderTraversal(root) {\n  if (!root) return [];\n  const result = [];\n  const queue = [root];\n  while (queue.length) {\n    const levelSize = queue.length;\n    const currentLevel = [];\n    for (let i = 0; i < levelSize; i++) {\n      const node = queue.shift();\n      currentLevel.push(node.value);\n      if (node.left) queue.push(node.left);\n      if (node.right) queue.push(node.right);\n    }\n    result.push(currentLevel);\n  }\n  return result;\n}",
+    "explanation": "큐를 사용하여 각 레벨의 노드를 순회하며, 레벨별 노드 값을 배열에 저장합니다."
+  },
+  {
+    "id": 56,
+    "title": "문제 56. 유효한 스도쿠 판별",
+    "description": "9x9 배열로 표현된 스도쿠 보드가 주어질 때, 각 행, 열, 3x3 서브박스가 1~9 숫자를 중복 없이 포함하는지 확인하는 isValidSudoku 함수를 작성하세요.",
+    "initialCode": "function isValidSudoku(board) {\n  // 여기에 코드를 작성하세요\n}\n\nconst board = [\n  [5,3,0,0,7,0,0,0,0],\n  [6,0,0,1,9,5,0,0,0],\n  [0,9,8,0,0,0,0,6,0],\n  [8,0,0,0,6,0,0,0,3],\n  [4,0,0,8,0,3,0,0,1],\n  [7,0,0,0,2,0,0,0,6],\n  [0,6,0,0,0,0,2,8,0],\n  [0,0,0,4,1,9,0,0,5],\n  [0,0,0,0,8,0,0,7,9]\n];\n\nconsole.log(isValidSudoku(board));",
+    "solution": "function isValidSudoku(board) {\n  const isValidGroup = (group) => {\n    const seen = new Set();\n    for (let num of group) {\n      if (num === 0) continue;\n      if (seen.has(num)) return false;\n      seen.add(num);\n    }\n    return true;\n  };\n\n  // Check rows and columns\n  for (let i = 0; i < 9; i++) {\n    const row = board[i];\n    const col = board.map(row => row[i]);\n    if (!isValidGroup(row) || !isValidGroup(col)) return false;\n  }\n\n  // Check 3x3 sub-boxes\n  for (let row = 0; row < 9; row += 3) {\n    for (let col = 0; col < 9; col += 3) {\n      const box = [];\n      for (let i = 0; i < 3; i++) {\n        for (let j = 0; j < 3; j++) {\n          box.push(board[row + i][col + j]);\n        }\n      }\n      if (!isValidGroup(box)) return false;\n    }\n  }\n\n  return true;\n}",
+    "explanation": "각 행, 열, 3x3 박스를 검사하여 중복 숫자가 있는지 확인하고, 모두 유효하면 true를 반환합니다."
+  },
+  {
+    "id": 57,
+    "title": "문제 57. 구간 병합 (Merge Intervals)",
+    "description": "배열 intervals가 주어질 때, 겹치는 구간을 병합하여 반환하는 mergeIntervals 함수를 작성하세요.",
+    "initialCode": "function mergeIntervals(intervals) {\n  // 여기에 코드를 작성하세요\n}\n\nconst intervals = [[1,3],[2,6],[8,10],[15,18]];\nconsole.log(mergeIntervals(intervals));",
+    "solution": "function mergeIntervals(intervals) {\n  if (!intervals.length) return [];\n  intervals.sort((a, b) => a[0] - b[0]);\n  const merged = [intervals[0]];\n  for (let i = 1; i < intervals.length; i++) {\n    const last = merged[merged.length - 1];\n    const current = intervals[i];\n    if (current[0] <= last[1]) {\n      last[1] = Math.max(last[1], current[1]);\n    } else {\n      merged.push(current);\n    }\n  }\n  return merged;\n}",
+    "explanation": "구간을 시작점 기준으로 정렬한 후, 이전 구간과 겹치는 경우 병합하여 결과 배열에 저장합니다."
+  },
+  {
+    "id": 58,
+    "title": "문제 58. Rate Limiter 구현",
+    "description": "함수 func와 최대 호출 횟수 limit, 그리고 시간 간격 interval이 주어질 때, 주어진 시간 간격 내에 함수 호출 횟수를 제한하는 rateLimiter 함수를 작성하세요.",
+    "initialCode": "function rateLimiter(func, limit, interval) {\n  // 여기에 코드를 작성하세요\n}\n\n// 예시 사용법\nlet count = 0;\nconst limitedFunc = rateLimiter(() => { count++; console.log(count); }, 2, 1000);\n\nsetInterval(limitedFunc, 300);",
+    "solution": "function rateLimiter(func, limit, interval) {\n  let calls = 0;\n  let queue = [];\n  setInterval(() => {\n    calls = 0;\n    while (queue.length && calls < limit) {\n      const f = queue.shift();\n      f();\n      calls++;\n    }\n  }, interval);\n  return function(...args) {\n    if (calls < limit) {\n      calls++;\n      func.apply(this, args);\n    } else {\n      queue.push(() => func.apply(this, args));\n    }\n  };\n}",
+    "explanation": "주어진 시간 간격마다 호출 횟수를 리셋하고, 호출 횟수가 limit을 초과하면 대기열에 추가하여 제한된 횟수 내에서 실행합니다."
+  },
+  {
+    "id": 59,
+    "title": "문제 59. Trie(접두사 트리) 구현",
+    "description": "문자열을 저장하고 검색할 수 있는 Trie 클래스를 작성하세요. insert, search, startsWith 메서드를 포함해야 합니다.",
+    "initialCode": "class Trie {\n  // 여기에 코드를 작성하세요\n}\n\nconst trie = new Trie();\ntrie.insert('apple');\nconsole.log(trie.search('apple'));\nconsole.log(trie.startsWith('app'));\n",
+    "solution": "class TrieNode {\n  constructor() {\n    this.children = {};\n    this.isEndOfWord = false;\n  }\n}\n\nclass Trie {\n  constructor() {\n    this.root = new TrieNode();\n  }\n  insert(word) {\n    let node = this.root;\n    for (let char of word) {\n      if (!node.children[char]) {\n        node.children[char] = new TrieNode();\n      }\n      node = node.children[char];\n    }\n    node.isEndOfWord = true;\n  }\n  search(word) {\n    let node = this.root;\n    for (let char of word) {\n      if (!node.children[char]) return false;\n      node = node.children[char];\n    }\n    return node.isEndOfWord;\n  }\n  startsWith(prefix) {\n    let node = this.root;\n    for (let char of prefix) {\n      if (!node.children[char]) return false;\n      node = node.children[char];\n    }\n    return true;\n  }\n}",
+    "explanation": "Trie 자료구조를 이용하여 문자열을 저장한 후, 완전한 단어 검색과 접두사 검색 기능을 제공합니다."
+  },
+  {
+    "id": 60,
+    "title": "문제 60. Array.prototype.map 커스텀 구현",
+    "description": "Array의 map 메서드를 커스텀 구현하여, 배열의 각 요소에 함수를 적용한 새로운 배열을 반환하는 customMap 함수를 작성하세요.",
+    "initialCode": "Array.prototype.customMap = function(callback) {\n  // 여기에 코드를 작성하세요\n};\n\nconsole.log([1,2,3].customMap(x => x * 2));",
+    "solution": "Array.prototype.customMap = function(callback) {\n  const result = [];\n  for (let i = 0; i < this.length; i++) {\n    if (i in this) {\n      result.push(callback(this[i], i, this));\n    }\n  }\n  return result;\n};",
+    "explanation": "this(배열)를 순회하면서 각 요소에 callback 함수를 적용하여 새로운 배열에 결과를 저장합니다."
+  },
+  {
+    "id": 61,
+    "title": "문제 61. 무한 커링 합 함수 (Infinite Currying Sum)",
+    "description": "함수 add를 작성하여, add(1)(2)(3)와 같이 무한 커링 형태로 호출하면 최종 합을 반환하도록 하세요. (toString 또는 valueOf를 오버라이드하여 최종 값을 반환)",
+    "initialCode": "function add(a) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(add(1)(2)(3)); // 6",
+    "solution": "function add(a) {\n  const sum = (b) => add(a + b);\n  sum.toString = () => a.toString();\n  sum.valueOf = () => a;\n  return sum;\n}",
+    "explanation": "함수 호출 시 누적 합을 저장하는 함수를 반환하고, toString 또는 valueOf를 오버라이드하여 최종 호출 시 합계가 반환되도록 합니다."
+  },
+  {
+    "id": 62,
+    "title": "문제 62. Proxy를 사용한 객체 변경 감지",
+    "description": "객체의 프로퍼티 변경을 감지하고 변경 사항을 콘솔에 로그로 출력하는 Proxy를 반환하는 함수를 작성하세요.",
+    "initialCode": "function createObservable(obj) {\n  // 여기에 코드를 작성하세요\n}\n\nconst person = { name: 'Alice', age: 25 };\nconst observedPerson = createObservable(person);\nobservedPerson.age = 26; // 콘솔에 로그 출력되어야 함",
+    "solution": "function createObservable(obj) {\n  return new Proxy(obj, {\n    set(target, prop, value) {\n      console.log(`Property ${prop} changed from ${target[prop]} to ${value}`);\n      target[prop] = value;\n      return true;\n    }\n  });\n}",
+    "explanation": "Proxy의 set 트랩을 활용하여 객체의 프로퍼티 변경 시 변경 전후 값을 로그로 출력합니다."
+  },
+  {
+    "id": 63,
+    "title": "문제 63. 중첩 객체에서 특정 키 찾기",
+    "description": "중첩된 객체에서 지정된 키를 찾아 해당 값을 반환하는 함수를 작성하세요. 만약 키가 존재하지 않으면 undefined를 반환합니다.",
+    "initialCode": "function findKey(obj, targetKey) {\n  // 여기에 코드를 작성하세요\n}\n\nconst data = { a: 1, b: { c: 2, d: { e: 3 } } };\nconsole.log(findKey(data, 'e')); // 3",
+    "solution": "function findKey(obj, targetKey) {\n  if (typeof obj !== 'object' || obj === null) return undefined;\n  if (obj.hasOwnProperty(targetKey)) return obj[targetKey];\n  for (let key in obj) {\n    if (obj.hasOwnProperty(key)) {\n      const result = findKey(obj[key], targetKey);\n      if (result !== undefined) return result;\n    }\n  }\n  return undefined;\n}",
+    "explanation": "재귀적으로 객체의 각 속성을 탐색하여, 지정한 키가 있으면 그 값을 반환합니다."
+  },
+  {
+    "id": 64,
+    "title": "문제 64. asyncForEach 구현",
+    "description": "배열의 각 요소에 대해 비동기 함수를 순차적으로 실행하는 asyncForEach 함수를 작성하세요.",
+    "initialCode": "async function asyncForEach(array, callback) {\n  // 여기에 코드를 작성하세요\n}\n\nconst delayLog = async (item) => {\n  await new Promise(resolve => setTimeout(resolve, 500));\n  console.log(item);\n};\n\nasyncForEach([1, 2, 3], delayLog);",
+    "solution": "async function asyncForEach(array, callback) {\n  for (let index = 0; index < array.length; index++) {\n    await callback(array[index], index, array);\n  }\n}",
+    "explanation": "for문과 await를 사용하여 배열의 각 요소에 대해 비동기 함수를 순차적으로 실행합니다."
+  },
+  {
+    "id": 65,
+    "title": "문제 65. 함수 합성 (Function Composition)",
+    "description": "여러 함수를 인자로 받아 합성(composition)한 함수를 반환하는 compose 함수를 작성하세요. 예를 들어, compose(f, g, h)(x)는 f(g(h(x)))와 동일해야 합니다.",
+    "initialCode": "function compose(...funcs) {\n  // 여기에 코드를 작성하세요\n}\n\nconst addOne = x => x + 1;\nconst double = x => x * 2;\n\nconsole.log(compose(addOne, double)(5)); // 11 (double(5)=10, addOne(10)=11)",
+    "solution": "function compose(...funcs) {\n  return function(initialValue) {\n    return funcs.reduceRight((acc, f) => f(acc), initialValue);\n  };\n}",
+    "explanation": "reduceRight를 사용하여 인자로 받은 함수들을 오른쪽부터 차례로 적용하는 함수 합성을 구현합니다."
+  },
+  {
+    "id": 66,
+    "title": "문제 66. 메모이제이션을 활용한 피보나치 수열",
+    "description": "재귀적으로 피보나치 수열을 계산하는 함수에 메모이제이션을 적용하여 성능을 최적화하세요.",
+    "initialCode": "function fibonacci(n, memo = {}) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(fibonacci(10)); // 55",
+    "solution": "function fibonacci(n, memo = {}) {\n  if (n <= 1) return n;\n  if (memo[n]) return memo[n];\n  memo[n] = fibonacci(n - 1, memo) + fibonacci(n - 2, memo);\n  return memo[n];\n}",
+    "explanation": "메모이제이션을 활용하여 중복 계산을 방지하고, 재귀적으로 피보나치 수열을 효율적으로 계산합니다."
+  },
+  {
+    "id": 67,
+    "title": "문제 67. Array.prototype.customReduce 구현",
+    "description": "Array의 reduce 메서드를 커스텀 구현하여, 배열의 요소를 누적하여 단일 값으로 반환하는 customReduce 함수를 작성하세요.",
+    "initialCode": "Array.prototype.customReduce = function(callback, initialValue) {\n  // 여기에 코드를 작성하세요\n};\n\nconsole.log([1, 2, 3, 4].customReduce((acc, cur) => acc + cur, 0));",
+    "solution": "Array.prototype.customReduce = function(callback, initialValue) {\n  let accumulator = initialValue;\n  let startIndex = 0;\n  if (accumulator === undefined) {\n    accumulator = this[0];\n    startIndex = 1;\n  }\n  for (let i = startIndex; i < this.length; i++) {\n    accumulator = callback(accumulator, this[i], i, this);\n  }\n  return accumulator;\n};",
+    "explanation": "초기값이 주어지지 않은 경우 첫 번째 요소를 사용하여, 배열을 순회하며 콜백 함수를 통해 누적 값을 계산합니다."
+  },
+  {
+    "id": 68,
+    "title": "문제 68. URL 쿼리 스트링 파싱",
+    "description": "URL의 쿼리 스트링을 파싱하여 키-값 객체로 반환하는 함수를 작성하세요.",
+    "initialCode": "function parseQueryString(query) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(parseQueryString('?name=Alice&age=25'));\n// { name: 'Alice', age: '25' }",
+    "solution": "function parseQueryString(query) {\n  const queryString = query.startsWith('?') ? query.slice(1) : query;\n  return queryString.split('&').reduce((acc, pair) => {\n    const [key, value] = pair.split('=');\n    acc[decodeURIComponent(key)] = decodeURIComponent(value || '');\n    return acc;\n  }, {});\n}",
+    "explanation": "쿼리 스트링에서 '?'를 제거한 후, '&'로 분리하여 각 키-값 쌍을 decodeURIComponent를 사용해 객체로 변환합니다."
+  },
+  {
+    "id": 69,
+    "title": "문제 69. 커스텀 이터러블 객체 구현",
+    "description": "객체에 Symbol.iterator를 구현하여 for...of 문으로 순회 가능한 이터러블 객체를 작성하세요.",
+    "initialCode": "const iterable = {\n  data: [1, 2, 3, 4, 5],\n  // 여기에 [Symbol.iterator] 코드를 작성하세요\n};\n\nfor (let value of iterable) {\n  console.log(value);\n}",
+    "solution": "const iterable = {\n  data: [1, 2, 3, 4, 5],\n  [Symbol.iterator]() {\n    let index = 0;\n    const data = this.data;\n    return {\n      next() {\n        if (index < data.length) {\n          return { value: data[index++], done: false };\n        } else {\n          return { done: true };\n        }\n      }\n    };\n  }\n};",
+    "explanation": "객체에 Symbol.iterator 메서드를 구현하여, 내부 배열 데이터를 순회할 수 있는 이터레이터를 반환합니다."
+  },
+  {
+    "id": 70,
+    "title": "문제 70. 시드를 사용하는 난수 생성기",
+    "description": "주어진 시드를 기반으로 예측 가능한 난수를 생성하는 함수를 작성하세요. (선형 합동법 사용)",
+    "initialCode": "function seededRandom(seed) {\n  // 여기에 코드를 작성하세요\n}\n\nconst randomGen = seededRandom(12345);\nconsole.log(randomGen()); // 0과 1 사이의 난수",
+    "solution": "function seededRandom(seed) {\n  return function() {\n    seed = (seed * 9301 + 49297) % 233280;\n    return seed / 233280;\n  };\n}",
+    "explanation": "선형 합동법(linear congruential generator)을 사용하여, 주어진 시드를 기반으로 난수를 생성하는 함수를 구현합니다."
+  },
+  {
+    "id": 71,
+    "title": "문제 71. JSON 객체 Pretty Print",
+    "description": "JSON 객체를 사람이 읽기 쉬운 형식으로 문자열로 변환하는 함수를 작성하세요.",
+    "initialCode": "function prettyPrintJSON(obj) {\n  // 여기에 코드를 작성하세요\n}\n\nconst data = { name: 'Alice', age: 25, address: { city: 'Seoul', zip: '04500' } };\nconsole.log(prettyPrintJSON(data));",
+    "solution": "function prettyPrintJSON(obj) {\n  return JSON.stringify(obj, null, 2);\n}",
+    "explanation": "JSON.stringify의 세 번째 인자를 활용하여 JSON 객체를 들여쓰기로 포맷팅합니다."
+  },
+  {
+    "id": 72,
+    "title": "문제 72. 비동기 에러 핸들링을 위한 tryCatch 래퍼",
+    "description": "비동기 함수를 인자로 받아 실행하고, 성공 시 결과와 null, 실패 시 null과 에러를 배열로 반환하는 함수를 작성하세요. 예: [result, null] 또는 [null, error]",
+    "initialCode": "async function tryCatchWrapper(asyncFunc) {\n  // 여기에 코드를 작성하세요\n}\n\n// 예시 사용법\nasync function fetchData() {\n  // 비동기 작업 모의\n  return 'data';\n}\n\ntryCatchWrapper(fetchData).then(console.log);",
+    "solution": "async function tryCatchWrapper(asyncFunc) {\n  try {\n    const result = await asyncFunc();\n    return [result, null];\n  } catch (error) {\n    return [null, error];\n  }\n}",
+    "explanation": "비동기 함수를 try-catch 문으로 감싸 실행하여, 성공 시 결과와 null, 실패 시 null과 에러를 배열 형태로 반환합니다."
+  },
+  {
+    "id": 73,
+    "title": "문제 73. 간단한 유한 상태 머신 구현",
+    "description": "초기 상태와 전이 규칙을 포함하는 상태 머신 객체와 이벤트 배열이 주어질 때, 최종 상태를 반환하는 함수를 작성하세요.",
+    "initialCode": "function runStateMachine(initialState, transitions, events) {\n  // 여기에 코드를 작성하세요\n}\n\nconst transitions = {\n  idle: { start: 'running' },\n  running: { stop: 'idle', pause: 'paused' },\n  paused: { resume: 'running', stop: 'idle' }\n};\n\nconsole.log(runStateMachine('idle', transitions, ['start', 'pause', 'resume', 'stop'])); // 'idle'",
+    "solution": "function runStateMachine(initialState, transitions, events) {\n  let state = initialState;\n  for (const event of events) {\n    const stateTransitions = transitions[state];\n    if (stateTransitions && stateTransitions[event]) {\n      state = stateTransitions[event];\n    }\n  }\n  return state;\n}",
+    "explanation": "주어진 전이 규칙과 이벤트 배열을 순차적으로 처리하여 최종 상태를 반환합니다."
+  },
+  {
+    "id": 74,
+    "title": "문제 74. 비동기 함수 메모이제이션",
+    "description": "비동기 함수 asyncFn와 인자들을 받아, 동일한 인자 조합에 대해 캐시된 결과를 반환하는 memoizeAsync 함수를 작성하세요.",
+    "initialCode": "function memoizeAsync(asyncFn) {\n  // 여기에 코드를 작성하세요\n}\n\nasync function fetchData(id) {\n  return new Promise(resolve => setTimeout(() => resolve(id * 2), 500));\n}\n\nconst memoizedFetchData = memoizeAsync(fetchData);\n\nmemoizedFetchData(2).then(console.log); // 4",
+    "solution": "function memoizeAsync(asyncFn) {\n  const cache = new Map();\n  return async function(...args) {\n    const key = JSON.stringify(args);\n    if (cache.has(key)) {\n      return cache.get(key);\n    }\n    const promise = asyncFn(...args);\n    cache.set(key, promise);\n    return promise;\n  };\n}",
+    "explanation": "입력 인자에 따라 캐시 키를 생성하고, 비동기 함수의 결과를 저장하여 동일 인자 호출 시 캐시된 프라미스를 반환합니다."
+  },
+  {
+    "id": 75,
+    "title": "문제 75. Promise.prototype.finally 구현",
+    "description": "Promise의 finally 메서드를 polyfill 형태로 구현하는 함수를 작성하세요. finally는 성공 또는 실패와 상관없이 callback을 실행해야 합니다.",
+    "initialCode": "if (!Promise.prototype.finally) {\n  Promise.prototype.finally = function(callback) {\n    // 여기에 코드를 작성하세요\n  };\n}\n\nPromise.resolve('done')\n  .finally(() => console.log('Cleanup'))\n  .then(console.log);",
+    "solution": "if (!Promise.prototype.finally) {\n  Promise.prototype.finally = function(callback) {\n    return this.then(\n      value => Promise.resolve(callback()).then(() => value),\n      reason => Promise.resolve(callback()).then(() => { throw reason; })\n    );\n  };\n}",
+    "explanation": "finally는 성공 또는 실패와 상관없이 callback을 실행하고, 원래의 값을 전달하거나 에러를 다시 throw하여 Promise 체인을 이어갑니다."
+  },
+  {
+    "id": 76,
+    "title": "문제 76. 한번만 호출되는 once 메서드 추가",
+    "description": "기존의 EventEmitter 클래스에 once 메서드를 추가하여, 해당 이벤트가 처음 발생할 때만 콜백을 실행하도록 확장하세요.",
+    "initialCode": "class EventEmitter {\n  constructor() {\n    this.events = {};\n  }\n  \n  on(event, listener) {\n    if (!this.events[event]) {\n      this.events[event] = [];\n    }\n    this.events[event].push(listener);\n  }\n  \n  off(event, listener) {\n    if (!this.events[event]) return;\n    this.events[event] = this.events[event].filter(fn => fn !== listener);\n  }\n  \n  emit(event, ...args) {\n    if (!this.events[event]) return;\n    this.events[event].forEach(listener => listener.apply(this, args));\n  }\n  \n  // 여기에 once 메서드를 작성하세요.\n}\n\nconst emitter = new EventEmitter();\nemitter.once('greet', msg => console.log(msg));\nemitter.emit('greet', 'Hello');\nemitter.emit('greet', 'Hello again');",
+    "solution": "once(event, listener) {\n  const onceWrapper = (...args) => {\n    listener.apply(this, args);\n    this.off(event, onceWrapper);\n  };\n  this.on(event, onceWrapper);\n}",
+    "explanation": "once 메서드는 내부에서 래퍼 함수를 등록하고, 이벤트 발생 시 한 번 실행된 후 해당 이벤트 리스너를 제거하여 이후 호출되지 않도록 합니다."
+  },
+  {
+    "id": 77,
+    "title": "문제 77. 제한된 동시 실행을 위한 asyncPool 구현",
+    "description": "비동기 작업을 담은 배열과 동시에 실행할 최대 작업 수 limit이 주어질 때, 모든 작업을 수행하면서 동시에 최대 limit개의 작업만 실행되도록 하는 asyncPool 함수를 작성하세요.",
+    "initialCode": "function asyncPool(limit, tasks) {\n  // 여기에 코드를 작성하세요\n}\n\n// 예시 사용법\nconst tasks = Array.from({ length: 5 }, (_, i) => () => new Promise(resolve => {\n  setTimeout(() => {\n    console.log(`Task ${i} completed`);\n    resolve(i);\n  }, 1000);\n}));\n\nasyncPool(2, tasks).then(results => console.log(results));",
+    "solution": "function asyncPool(limit, tasks) {\n  let i = 0;\n  const results = [];\n  const executing = [];\n\n  const enqueue = () => {\n    if (i === tasks.length) {\n      return Promise.resolve();\n    }\n    const taskIndex = i++;\n    const taskPromise = tasks[taskIndex]();\n    results[taskIndex] = taskPromise;\n    const e = taskPromise.then(() => executing.splice(executing.indexOf(e), 1));\n    executing.push(e);\n    let r = Promise.resolve();\n    if (executing.length >= limit) {\n      r = Promise.race(executing);\n    }\n    return r.then(() => enqueue());\n  };\n\n  return enqueue().then(() => Promise.all(results));\n}",
+    "explanation": "동시 실행 가능한 작업 수를 제한하며, Promise.race를 사용해 완료된 작업이 있을 때마다 새로운 작업을 시작하여 모든 작업이 완료되면 결과 배열을 반환합니다."
+  },
+  {
+    "id": 78,
+    "title": "문제 78. Array.prototype.customFilter 구현",
+    "description": "Array의 filter 메서드를 커스텀 구현하여, 조건을 만족하는 요소들로 구성된 새로운 배열을 반환하는 customFilter 함수를 작성하세요.",
+    "initialCode": "Array.prototype.customFilter = function(callback) {\n  // 여기에 코드를 작성하세요\n};\n\nconsole.log([1, 2, 3, 4].customFilter(x => x % 2 === 0));",
+    "solution": "Array.prototype.customFilter = function(callback) {\n  const result = [];\n  for (let i = 0; i < this.length; i++) {\n    if (i in this && callback(this[i], i, this)) {\n      result.push(this[i]);\n    }\n  }\n  return result;\n};",
+    "explanation": "배열의 각 요소에 대해 callback 함수를 실행하고, 조건을 만족하는 요소들만 새로운 배열에 추가하여 반환합니다."
+  },
+  {
+    "id": 79,
+    "title": "문제 79. 캐시 만료 기능을 갖춘 Memoization",
+    "description": "함수 fn와 캐시 만료 시간 ttl(밀리초)이 주어질 때, 결과를 캐싱하고 ttl 이후에 캐시를 무효화하는 memoizeWithExpiry 함수를 작성하세요.",
+    "initialCode": "function memoizeWithExpiry(fn, ttl) {\n  // 여기에 코드를 작성하세요\n}\n\nfunction add(a, b) {\n  return a + b;\n}\n\nconst memoizedAdd = memoizeWithExpiry(add, 1000);\nconsole.log(memoizedAdd(1, 2)); // 계산 결과",
+    "solution": "function memoizeWithExpiry(fn, ttl) {\n  const cache = new Map();\n  return function(...args) {\n    const key = JSON.stringify(args);\n    const now = Date.now();\n    if (cache.has(key)) {\n      const { value, expiry } = cache.get(key);\n      if (now < expiry) {\n        return value;\n      } else {\n        cache.delete(key);\n      }\n    }\n    const result = fn(...args);\n    cache.set(key, { value: result, expiry: now + ttl });\n    return result;\n  };\n}",
+    "explanation": "입력 인자에 따라 캐시 키를 생성하고, 지정된 ttl(만료 시간)이 지나면 캐시를 삭제한 후 함수를 재실행하여 최신 결과를 반환합니다."
+  },
+  {
+    "id": 80,
+    "title": "문제 80. 함수 호출 로깅 데코레이터",
+    "description": "함수를 인자로 받아 해당 함수의 호출 전후에 인자와 결과를 로그로 출력하는 데코레이터 함수 logDecorator를 작성하세요.",
+    "initialCode": "function logDecorator(fn) {\n  // 여기에 코드를 작성하세요\n}\n\nfunction multiply(a, b) {\n  return a * b;\n}\n\nconst loggedMultiply = logDecorator(multiply);\nconsole.log(loggedMultiply(3, 4));",
+    "solution": "function logDecorator(fn) {\n  return function(...args) {\n    console.log('Calling function with arguments:', args);\n    const result = fn.apply(this, args);\n    console.log('Function returned:', result);\n    return result;\n  };\n}",
+    "explanation": "함수 호출 시 인자와 반환값을 로그에 출력하고, 원래 함수의 결과를 반환하는 래퍼 함수를 구현합니다."
+  },
+  {
+    "id": 81,
+    "title": "문제 81. Proxy를 이용한 속성 접근 시간 측정",
+    "description": "객체의 프로퍼티 접근 시 실행 시간을 측정하여 콘솔에 로그로 출력하는 Proxy를 생성하는 함수를 작성하세요.",
+    "initialCode": "function createTimingProxy(obj) {\n  // 여기에 코드를 작성하세요\n}\n\nconst testObj = { a: 1, b: 2 };\nconst proxiedObj = createTimingProxy(testObj);\nconsole.log(proxiedObj.a);",
+    "solution": "function createTimingProxy(obj) {\n  return new Proxy(obj, {\n    get(target, prop, receiver) {\n      const start = performance.now();\n      const value = Reflect.get(target, prop, receiver);\n      const end = performance.now();\n      console.log(`Accessing property \"${prop}\" took ${end - start} ms`);\n      return value;\n    }\n  });\n}",
+    "explanation": "Proxy의 get 트랩을 활용하여 속성 접근 전후의 시간을 측정하고, 소요된 시간을 로그로 출력합니다."
+  },
+  {
+    "id": 82,
+    "title": "문제 82. JSON Web Token (JWT) 생성 및 검증",
+    "description": "비밀 키를 사용하여 페이로드 객체로부터 JWT를 생성하고, 주어진 토큰을 검증하는 간단한 함수를 작성하세요. (헤더, 페이로드, 서명 구성)",
+    "initialCode": "function createJWT(payload, secret) {\n  // 여기에 코드를 작성하세요\n}\n\nfunction verifyJWT(token, secret) {\n  // 여기에 코드를 작성하세요\n}\n\n// 예시 사용법\nconst payload = { userId: 123, exp: Math.floor(Date.now()/1000) + 3600 };\nconst secret = 'mysecret';\nconst token = createJWT(payload, secret);\nconsole.log(verifyJWT(token, secret));",
+    "solution": "const crypto = require('crypto');\n\nfunction base64url(source) {\n  return Buffer.from(source)\n    .toString('base64')\n    .replace(/=/g, '')\n    .replace(/\\+/g, '-')\n    .replace(/\\//g, '_');\n}\n\nfunction createJWT(payload, secret) {\n  const header = { alg: 'HS256', typ: 'JWT' };\n  const encodedHeader = base64url(JSON.stringify(header));\n  const encodedPayload = base64url(JSON.stringify(payload));\n  const signature = crypto.createHmac('sha256', secret)\n    .update(encodedHeader + '.' + encodedPayload)\n    .digest('base64')\n    .replace(/=/g, '')\n    .replace(/\\+/g, '-')\n    .replace(/\\//g, '_');\n  return `${encodedHeader}.${encodedPayload}.${signature}`;\n}\n\nfunction verifyJWT(token, secret) {\n  const parts = token.split('.');\n  if (parts.length !== 3) return false;\n  const [encodedHeader, encodedPayload, signature] = parts;\n  const expectedSignature = crypto.createHmac('sha256', secret)\n    .update(encodedHeader + '.' + encodedPayload)\n    .digest('base64')\n    .replace(/=/g, '')\n    .replace(/\\+/g, '-')\n    .replace(/\\//g, '_');\n  return signature === expectedSignature;\n}",
+    "explanation": "JWT는 헤더, 페이로드, 서명으로 구성되며, HMAC SHA256을 사용하여 서명을 생성하고, 검증 시 동일한 서명을 계산하여 비교합니다. (이 구현은 Node.js 환경의 crypto 모듈을 사용합니다.)"
+  },
+  {
+    "id": 83,
+    "title": "문제 83. HTML 문자열을 DOM 객체로 변환",
+    "description": "HTML 문자열이 주어질 때, 이를 파싱하여 DOM 요소로 변환하는 함수를 작성하세요. (브라우저 환경 가정)",
+    "initialCode": "function parseHTMLString(htmlString) {\n  // 여기에 코드를 작성하세요\n}\n\nconst html = '<div><p>Hello</p></div>';\nconst element = parseHTMLString(html);\nconsole.log(element.outerHTML);",
+    "solution": "function parseHTMLString(htmlString) {\n  const template = document.createElement('template');\n  template.innerHTML = htmlString.trim();\n  return template.content.firstChild;\n}",
+    "explanation": "HTML 문자열을 <template> 요소에 삽입한 후, content 프로퍼티를 통해 DOM 요소를 추출하여 반환합니다."
+  },
+  {
+    "id": 84,
+    "title": "문제 84. 비동기 제너레이터를 사용한 데이터 스트림 처리",
+    "description": "비동기 데이터 스트림을 받아 각 데이터를 처리한 후 yield하는 async generator 함수를 작성하세요.",
+    "initialCode": "async function* processStream(stream) {\n  // 여기에 코드를 작성하세요\n}\n\n// 예시 사용법 (stream은 비동기 이터러블 객체입니다):\n(async () => {\n  for await (const item of processStream(stream)) {\n    console.log(item);\n  }\n})();",
+    "solution": "async function* processStream(stream) {\n  for await (const item of stream) {\n    yield item * 2; // 예시: 각 데이터를 2배로 처리\n  }\n}",
+    "explanation": "비동기 이터러블을 순회하며 각 데이터를 처리한 후 yield하는 async generator 함수를 구현합니다."
+  },
+  {
+    "id": 85,
+    "title": "문제 85. 취소 가능한 Promise 구현",
+    "description": "Promise에 취소 기능을 추가하는 함수를 작성하세요. cancelablePromise(fn)을 사용하면, 실행 중인 Promise에 cancel() 메서드로 취소 기능이 제공되어야 합니다.",
+    "initialCode": "function cancelablePromise(fn) {\n  // 여기에 코드를 작성하세요\n}\n\nconst cp = cancelablePromise(() => new Promise(resolve => setTimeout(() => resolve('Done'), 2000)));\n// 필요 시 cp.cancel()을 호출하여 취소합니다.",
+    "solution": "function cancelablePromise(fn) {\n  let hasCanceled = false;\n  const promise = new Promise((resolve, reject) => {\n    fn()\n      .then((value) => {\n        if (hasCanceled) {\n          reject({ isCanceled: true });\n        } else {\n          resolve(value);\n        }\n      })\n      .catch((error) => {\n        if (hasCanceled) {\n          reject({ isCanceled: true });\n        } else {\n          reject(error);\n        }\n      });\n  });\n  promise.cancel = () => {\n    hasCanceled = true;\n  };\n  return promise;\n}",
+    "explanation": "내부 플래그를 사용하여 취소 여부를 판단하고, cancel() 호출 시 Promise가 취소되어 reject되도록 구현합니다."
+  },
+  {
+    "id": 86,
+    "title": "문제 86. 이중 연결 리스트 (Doubly Linked List) 구현",
+    "description": "노드 삽입, 삭제 및 탐색 메서드를 포함하는 이중 연결 리스트(Doubly Linked List) 클래스를 구현하세요.",
+    "initialCode": "class DoublyLinkedList {\n  constructor() {\n    // 여기에 코드를 작성하세요\n  }\n  append(value) {\n    // 노드 삽입 메서드\n  }\n  find(value) {\n    // 노드 탐색 메서드\n  }\n  remove(value) {\n    // 노드 삭제 메서드\n  }\n}\n\nconst list = new DoublyLinkedList();\nlist.append(1);\nlist.append(2);\nconsole.log(list.find(2));",
+    "solution": "class Node {\n  constructor(value) {\n    this.value = value;\n    this.prev = null;\n    this.next = null;\n  }\n}\n\nclass DoublyLinkedList {\n  constructor() {\n    this.head = null;\n    this.tail = null;\n  }\n  append(value) {\n    const newNode = new Node(value);\n    if (!this.head) {\n      this.head = this.tail = newNode;\n    } else {\n      this.tail.next = newNode;\n      newNode.prev = this.tail;\n      this.tail = newNode;\n    }\n  }\n  find(value) {\n    let current = this.head;\n    while (current) {\n      if (current.value === value) return current;\n      current = current.next;\n    }\n    return null;\n  }\n  remove(value) {\n    let current = this.head;\n    while (current) {\n      if (current.value === value) {\n        if (current.prev) current.prev.next = current.next;\n        else this.head = current.next;\n        if (current.next) current.next.prev = current.prev;\n        else this.tail = current.prev;\n        return true;\n      }\n      current = current.next;\n    }\n    return false;\n  }\n}",
+    "explanation": "각 노드가 이전 및 다음 노드에 대한 참조를 가지도록 하여, 삽입, 삭제 및 탐색 기능을 지원하는 이중 연결 리스트를 구현합니다."
+  },
+  {
+    "id": 87,
+    "title": "문제 87. LFU 캐시 구현",
+    "description": "최대 용량 capacity가 주어질 때, get(key)와 put(key, value) 메서드를 지원하는 LFU (Least Frequently Used) 캐시 클래스를 작성하세요.",
+    "initialCode": "class LFUCache {\n  constructor(capacity) {\n    // 여기에 코드를 작성하세요\n  }\n  get(key) {\n    // 여기에 코드를 작성하세요\n  }\n  put(key, value) {\n    // 여기에 코드를 작성하세요\n  }\n}\n\nconst cache = new LFUCache(2);\ncache.put(1, 'one');\ncache.put(2, 'two');\nconsole.log(cache.get(1));\ncache.put(3, 'three');\nconsole.log(cache.get(2));",
+    "solution": "class LFUCache {\n  constructor(capacity) {\n    this.capacity = capacity;\n    this.cache = new Map();\n  }\n  get(key) {\n    if (!this.cache.has(key)) return -1;\n    const { value, freq } = this.cache.get(key);\n    this.cache.set(key, { value, freq: freq + 1 });\n    return value;\n  }\n  put(key, value) {\n    if (this.capacity <= 0) return;\n    if (this.cache.has(key)) {\n      const { freq } = this.cache.get(key);\n      this.cache.set(key, { value, freq: freq + 1 });\n      return;\n    }\n    if (this.cache.size >= this.capacity) {\n      let minFreq = Infinity;\n      let keyToEvict;\n      for (const [k, { freq }] of this.cache.entries()) {\n        if (freq < minFreq) {\n          minFreq = freq;\n          keyToEvict = k;\n        }\n      }\n      this.cache.delete(keyToEvict);\n    }\n    this.cache.set(key, { value, freq: 1 });\n  }\n}",
+    "explanation": "각 항목의 사용 빈도를 기록하고, 캐시가 가득 찼을 때 사용 빈도가 가장 낮은 항목을 제거하는 LFU 캐시를 구현합니다."
+  },
+  {
+    "id": 88,
+    "title": "문제 88. K-means 클러스터링 알고리즘 구현",
+    "description": "2차원 데이터 포인트 배열과 클러스터 수 k가 주어질 때, 간단한 K-means 클러스터링 알고리즘을 구현하여 각 포인트의 클러스터 할당 결과를 반환하는 함수를 작성하세요.",
+    "initialCode": "function kMeans(points, k, maxIterations = 100) {\n  // 여기에 코드를 작성하세요\n}\n\nconst points = [[1,2], [2,1], [8,9], [9,8]];\nconsole.log(kMeans(points, 2));",
+    "solution": "function kMeans(points, k, maxIterations = 100) {\n  // 초기 중심 무작위 선택\n  const centroids = [];\n  for (let i = 0; i < k; i++) {\n    centroids.push(points[Math.floor(Math.random() * points.length)]);\n  }\n  let assignments = new Array(points.length);\n  for (let iter = 0; iter < maxIterations; iter++) {\n    let change = false;\n    // 할당 단계\n    for (let i = 0; i < points.length; i++) {\n      const point = points[i];\n      let minDist = Infinity, assignedCluster = -1;\n      for (let j = 0; j < k; j++) {\n        const centroid = centroids[j];\n        const dist = Math.pow(point[0] - centroid[0], 2) + Math.pow(point[1] - centroid[1], 2);\n        if (dist < minDist) {\n          minDist = dist;\n          assignedCluster = j;\n        }\n      }\n      if (assignments[i] !== assignedCluster) {\n        assignments[i] = assignedCluster;\n        change = true;\n      }\n    }\n    if (!change) break;\n    // 업데이트 단계\n    for (let j = 0; j < k; j++) {\n      const clusterPoints = points.filter((p, idx) => assignments[idx] === j);\n      if (clusterPoints.length > 0) {\n        const avgX = clusterPoints.reduce((sum, p) => sum + p[0], 0) / clusterPoints.length;\n        const avgY = clusterPoints.reduce((sum, p) => sum + p[1], 0) / clusterPoints.length;\n        centroids[j] = [avgX, avgY];\n      }\n    }\n  }\n  return assignments;\n}",
+    "explanation": "K-means 알고리즘은 데이터 포인트를 클러스터에 할당하고, 각 클러스터의 중심을 반복적으로 업데이트하여 수렴할 때까지 클러스터링을 수행합니다."
+  },
+  {
+    "id": 89,
+    "title": "문제 89. Boyer-Moore 문자열 검색 알고리즘 구현",
+    "description": "문자열 text와 패턴 pattern이 주어질 때, Boyer-Moore 알고리즘을 사용하여 pattern이 text 내에서 처음 등장하는 인덱스를 반환하는 함수를 작성하세요.",
+    "initialCode": "function boyerMoore(text, pattern) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(boyerMoore('HERE IS A SIMPLE EXAMPLE', 'EXAMPLE'));\n",
+    "solution": "function boyerMoore(text, pattern) {\n  const m = pattern.length;\n  const n = text.length;\n  if (m === 0) return 0;\n  const badChar = {};\n  for (let i = 0; i < m; i++) {\n    badChar[pattern[i]] = i;\n  }\n  let s = 0;\n  while (s <= n - m) {\n    let j = m - 1;\n    while (j >= 0 && pattern[j] === text[s + j]) {\n      j--;\n    }\n    if (j < 0) return s;\n    else {\n      const shift = Math.max(1, j - (badChar[text[s + j]] !== undefined ? badChar[text[s + j]] : -1));\n      s += shift;\n    }\n  }\n  return -1;\n}",
+    "explanation": "Boyer-Moore 알고리즘은 패턴의 마지막 문자부터 비교하며, 불일치 시 bad character rule을 적용하여 검색 효율을 높입니다."
+  },
+  {
+    "id": 90,
+    "title": "문제 90. WeakMap을 활용한 캐시 예제",
+    "description": "객체 캐싱을 위해 WeakMap을 활용하는 예제를 작성하고, 객체가 가비지 컬렉션 될 때 캐시에서 자동으로 제거되는 것을 보여주는 함수를 작성하세요.",
+    "initialCode": "function createWeakCache() {\n  // 여기에 코드를 작성하세요\n}\n\nconst cache = createWeakCache();\nconst obj = {};\ncache.set(obj, 'cached value');\nconsole.log(cache.get(obj));",
+    "solution": "function createWeakCache() {\n  const cache = new WeakMap();\n  return {\n    set(key, value) {\n      cache.set(key, value);\n    },\n    get(key) {\n      return cache.get(key);\n    }\n  };\n}",
+    "explanation": "WeakMap은 키로 사용된 객체가 가비지 컬렉션 될 때 자동으로 캐시에서 제거되어 메모리 최적화에 도움이 됩니다."
+  },
+  {
+    "id": 91,
+    "title": "문제 91. 텍스트 유사도 측정 (Jaccard Index)",
+    "description": "두 문자열 간의 Jaccard Index를 계산하여 유사도를 반환하는 함수를 작성하세요. (Jaccard Index = 교집합 크기 / 합집합 크기)",
+    "initialCode": "function jaccardIndex(str1, str2) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(jaccardIndex('this is a test', 'this is a quiz'));\n",
+    "solution": "function jaccardIndex(str1, str2) {\n  const set1 = new Set(str1.split(' '));\n  const set2 = new Set(str2.split(' '));\n  const intersection = new Set([...set1].filter(x => set2.has(x)));\n  const union = new Set([...set1, ...set2]);\n  return intersection.size / union.size;\n}",
+    "explanation": "문자열을 단어 집합으로 변환한 후, 두 집합의 교집합과 합집합 크기를 계산하여 Jaccard Index를 구합니다."
+  },
+  {
+    "id": 92,
+    "title": "문제 92. 우선순위 지원 PubSub 시스템 확장",
+    "description": "기존 PubSub 시스템에 이벤트 리스너 우선순위 기능을 추가하여, 우선순위가 높은 리스너가 먼저 실행되도록 확장하세요.",
+    "initialCode": "class PubSubWithPriority {\n  constructor() {\n    // 여기에 코드를 작성하세요\n  }\n  subscribe(event, listener, priority = 0) {\n    // 여기에 코드를 작성하세요\n  }\n  unsubscribe(event, listener) {\n    // 여기에 코드를 작성하세요\n  }\n  publish(event, ...args) {\n    // 여기에 코드를 작성하세요\n  }\n}\n\nconst pubsub = new PubSubWithPriority();\npubsub.subscribe('event', msg => console.log('High:', msg), 10);\npubsub.subscribe('event', msg => console.log('Low:', msg), 1);\npubsub.publish('event', 'Hello Priority');",
+    "solution": "class PubSubWithPriority {\n  constructor() {\n    this.events = {};\n  }\n  subscribe(event, listener, priority = 0) {\n    if (!this.events[event]) {\n      this.events[event] = [];\n    }\n    this.events[event].push({ listener, priority });\n    this.events[event].sort((a, b) => b.priority - a.priority);\n  }\n  unsubscribe(event, listener) {\n    if (!this.events[event]) return;\n    this.events[event] = this.events[event].filter(item => item.listener !== listener);\n  }\n  publish(event, ...args) {\n    if (!this.events[event]) return;\n    this.events[event].forEach(item => item.listener(...args));\n  }\n}",
+    "explanation": "이벤트 리스너 등록 시 우선순위 값을 함께 저장하고, 등록 후 우선순위에 따라 정렬하여 높은 우선순위의 리스너가 먼저 호출되도록 합니다."
+  },
+  {
+    "id": 93,
+    "title": "문제 93. Debounce 및 Throttle 조합 함수 구현",
+    "description": "디바운스와 스로틀 기능을 모두 포함하는 함수를 작성하여, 연속 호출 시 지정된 간격 내에서 한 번만 실행되도록 하는 함수를 작성하세요.",
+    "initialCode": "function debounceThrottle(func, delay) {\n  // 여기에 코드를 작성하세요\n}\n\nconst optimizedFunc = debounceThrottle(() => console.log('Called'), 1000);\n// 최적화된 함수 호출 예제",
+    "solution": "function debounceThrottle(func, delay) {\n  let lastCall = 0;\n  let timeoutId;\n  return function(...args) {\n    const now = Date.now();\n    const remaining = delay - (now - lastCall);\n    if (remaining <= 0) {\n      clearTimeout(timeoutId);\n      lastCall = now;\n      func.apply(this, args);\n    } else {\n      clearTimeout(timeoutId);\n      timeoutId = setTimeout(() => {\n        lastCall = Date.now();\n        func.apply(this, args);\n      }, remaining);\n    }\n  };\n}",
+    "explanation": "함수 호출 간 최소 간격을 유지하면서, 디바운스와 스로틀 기능을 결합하여 과도한 호출을 제한합니다."
+  },
+  {
+    "id": 94,
+    "title": "문제 94. 구조 분해 할당을 활용한 깊은 객체 복사",
+    "description": "구조 분해 할당과 전개 연산자를 활용하여, 중첩 객체를 재귀적으로 복사하는 깊은 복사 함수를 작성하세요.",
+    "initialCode": "function deepCopyUsingDestructuring(obj) {\n  // 여기에 코드를 작성하세요\n}\n\nconst original = { a: 1, b: { c: 2 } };\nconsole.log(deepCopyUsingDestructuring(original));",
+    "solution": "function deepCopyUsingDestructuring(obj) {\n  if (obj === null || typeof obj !== 'object') return obj;\n  if (Array.isArray(obj)) return obj.map(item => deepCopyUsingDestructuring(item));\n  return Object.keys(obj).reduce((acc, key) => ({\n    ...acc,\n    [key]: deepCopyUsingDestructuring(obj[key])\n  }), {});\n}",
+    "explanation": "재귀적으로 각 속성을 전개 연산자와 구조 분해를 이용해 복사하여, 중첩 객체도 깊은 복사를 수행합니다."
+  },
+  {
+    "id": 95,
+    "title": "문제 95. 클로저를 사용한 부분 적용 함수 (Partial Application)",
+    "description": "함수와 일부 인자를 인자로 받아, 나머지 인자를 나중에 받아 실행할 수 있는 부분 적용 함수를 작성하세요.",
+    "initialCode": "function partial(fn, ...presetArgs) {\n  // 여기에 코드를 작성하세요\n}\n\nfunction add(a, b, c) {\n  return a + b + c;\n}\n\nconst addPartial = partial(add, 1, 2);\nconsole.log(addPartial(3)); // 6",
+    "solution": "function partial(fn, ...presetArgs) {\n  return function(...laterArgs) {\n    return fn(...presetArgs, ...laterArgs);\n  };\n}",
+    "explanation": "부분 적용 함수는 일부 인자를 미리 고정하고, 나머지 인자를 받아 원래 함수를 호출하는 방식을 사용합니다."
+  },
+  {
+    "id": 96,
+    "title": "문제 96. 클로저 기반 피보나치 함수",
+    "description": "클로저를 사용하여 피보나치 수열을 계산하고, 이전 계산 결과를 캐싱하는 피보나치 함수를 작성하세요.",
+    "initialCode": "function createFibonacci() {\n  // 여기에 코드를 작성하세요\n}\n\nconst fib = createFibonacci();\nconsole.log(fib(10)); // 55",
+    "solution": "function createFibonacci() {\n  const memo = {};\n  function fib(n) {\n    if (n <= 1) return n;\n    if (memo[n] !== undefined) return memo[n];\n    memo[n] = fib(n - 1) + fib(n - 2);\n    return memo[n];\n  }\n  return fib;\n}",
+    "explanation": "클로저를 사용하여 memo 객체에 계산 결과를 저장하고, 중복 계산을 방지하는 피보나치 함수를 구현합니다."
+  },
+  {
+    "id": 97,
+    "title": "문제 97. 동적 import()를 사용한 모듈 로딩",
+    "description": "ES 모듈의 동적 import()를 사용하여, 주어진 모듈 경로를 비동기적으로 로딩하는 함수를 작성하세요.",
+    "initialCode": "async function loadModule(modulePath) {\n  // 여기에 코드를 작성하세요\n}\n\n// 예시 사용법\nloadModule('./module.js').then(module => {\n  // 로딩된 모듈 사용\n});",
+    "solution": "async function loadModule(modulePath) {\n  return await import(modulePath);\n}",
+    "explanation": "동적 import()를 사용하면 런타임에 모듈을 비동기적으로 불러올 수 있으며, Promise를 반환합니다."
+  },
+  {
+    "id": 98,
+    "title": "문제 98. Proxy를 사용한 배열 유효성 검사",
+    "description": "배열에 숫자만 포함되도록 제한하는 Proxy를 생성하는 함수를 작성하세요. 배열에 숫자가 아닌 값을 추가하면 에러를 발생시켜야 합니다.",
+    "initialCode": "function createNumericArray(arr = []) {\n  // 여기에 코드를 작성하세요\n}\n\nconst numericArray = createNumericArray();\nnumericArray.push(1);\n// numericArray.push('a'); // 이 경우 에러 발생",
+    "solution": "function createNumericArray(arr = []) {\n  return new Proxy(arr, {\n    set(target, prop, value) {\n      if (prop !== 'length' && typeof value !== 'number') {\n        throw new TypeError('Only numbers are allowed');\n      }\n      target[prop] = value;\n      return true;\n    }\n  });\n}",
+    "explanation": "Proxy의 set 트랩을 활용하여 배열에 추가되는 값이 숫자인지 확인하고, 그렇지 않으면 예외를 발생시킵니다."
+  },
+  {
+    "id": 99,
+    "title": "문제 99. Custom MapReduce 함수 구현",
+    "description": "배열과 map, reduce 콜백 함수를 인자로 받아, 먼저 map을 수행한 후 reduce를 적용하여 단일 값으로 반환하는 mapReduce 함수를 작성하세요.",
+    "initialCode": "function mapReduce(array, mapFn, reduceFn, initialValue) {\n  // 여기에 코드를 작성하세요\n}\n\nconsole.log(mapReduce([1,2,3,4], x => x * 2, (acc, cur) => acc + cur, 0));",
+    "solution": "function mapReduce(array, mapFn, reduceFn, initialValue) {\n  const mapped = array.map(mapFn);\n  return mapped.reduce(reduceFn, initialValue);\n}",
+    "explanation": "배열의 각 요소에 map 함수를 적용한 후, reduce 함수를 사용하여 누적 결과를 계산합니다."
+  },
+  {
+    "id": 100,
+    "title": "문제 100. 재귀적 퍼미션 체커 (Permission Checker)",
+    "description": "중첩된 객체로 표현된 사용자 권한 구조와 특정 권한 문자열이 주어질 때, 해당 권한이 존재하는지 재귀적으로 검사하는 함수를 작성하세요.",
+    "initialCode": "function checkPermission(permissions, target) {\n  // 여기에 코드를 작성하세요\n}\n\nconst userPermissions = { admin: { read: true, write: false }, user: { read: true } };\nconsole.log(checkPermission(userPermissions, 'write'));",
+    "solution": "function checkPermission(permissions, target) {\n  if (permissions[target] !== undefined) return permissions[target];\n  for (let key in permissions) {\n    if (typeof permissions[key] === 'object') {\n      const result = checkPermission(permissions[key], target);\n      if (result !== undefined) return result;\n    }\n  }\n  return undefined;\n}",
+    "explanation": "재귀적으로 객체의 각 속성을 탐색하여, 지정한 권한 문자열에 해당하는 값을 찾으면 반환하고, 없으면 undefined를 반환합니다."
+  }
+]

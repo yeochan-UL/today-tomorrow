@@ -23,16 +23,16 @@ const Container = styled.section`
     width: 100%;
     max-width: 1000px;
     min-height: 60vh;
-    margin: 90px auto 0; /* 데스크탑: 상단 90px 마진 (네비 높이만큼) */
+    margin: 90px auto 0; /* 데스크탑: 네비 높이만큼 마진 */
     padding: 2rem;
     background-color: #fff;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
+  
     @media (max-width: 768px) {
-        margin-top: 70px; /* 모바일: 상단 70px 마진 (네비 높이만큼) */
+        margin-top: 70px; /* 모바일: 네비 높이만큼 마진 */
     }
 `;
 
@@ -101,6 +101,7 @@ const SubscribeButton = styled.button`
     }
 `;
 
+/* 구독 팝업 메시지 관련 스타일 */
 const MessageOverlay = styled.div`
     position: fixed;
     top: 0;
@@ -121,6 +122,11 @@ const MessageBox = styled.div`
     border-radius: 12px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
     text-align: center;
+
+    @media (max-width: 768px) {
+        width: 80%;
+        padding: 1.5rem;
+    }
 `;
 
 const ConfirmButton = styled.button`
@@ -135,6 +141,11 @@ const ConfirmButton = styled.button`
   
     &:hover {
         background-color: #0059c1;
+    }
+
+    @media (max-width: 768px) {
+        padding: 8px 16px;
+        font-size: 0.9rem;
     }
 `;
 

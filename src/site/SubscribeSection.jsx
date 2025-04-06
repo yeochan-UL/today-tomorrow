@@ -146,7 +146,7 @@ export default function SubscribeSection() {
     const handleSubscribe = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('https://www.todaytomorrow.today/api/subscribe', { email });
+            const response = await axios.post('/api/subscribe', { email });
             setMessage(response.data.message || '🎉 구독 완료!\n이제 매일 오전 9시에 문제를 보내드릴게요!');
             setShowMessage(true);
             setEmail('');
